@@ -62,10 +62,10 @@ const Navbar = () => {
       <div className={`md:hidden absolute bg-white w-full transition-all duration-500 ease-in-out ${navOpen ? 'top-16 opacity-100' : 'top-[-400px] opacity-0'}`}>
         <ul className="flex flex-col items-center space-y-4 py-8 text-lg font-medium text-gray-700">
           <li className="hover:text-orange-500 transition duration-300 cursor-pointer">
-            <a href="#home">Home</a>
+          <Link to="/">Home</Link> 
           </li>
           <li className="hover:text-orange-500 transition duration-300 cursor-pointer">
-            <a href="#about">About</a>
+          <Link to="/about">About Us</Link>
           </li>
           <li className="hover:text-orange-500 transition duration-300 cursor-pointer">
             <a href="#services">Services</a>
