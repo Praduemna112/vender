@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import React from "react";
 import "./App.css";
 import CounterPage from "./components/CounterPage/CounterPage";
 import Navbar from "./components/Navbar/Navbar";
