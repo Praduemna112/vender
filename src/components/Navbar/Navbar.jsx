@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import logo from '../../assets/logo.jpeg';
+import { Link } from 'react-router-dom'; 
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 
 const Navbar = () => {
@@ -32,10 +33,18 @@ const Navbar = () => {
 
         {/* Nav Links (Desktop) */}
         <ul className="hidden md:flex space-x-8 text-lg font-medium text-white">
-          <li className="hover:text-orange-500 transition duration-300 cursor-pointer">Home</li>
-          <li className="hover:text-orange-500 transition duration-300 cursor-pointer">About</li>
-          <li className="hover:text-orange-500 transition duration-300 cursor-pointer">Services</li>
-          <li className="hover:text-orange-500 transition duration-300 cursor-pointer">Contact</li>
+          <li className="hover:text-orange-500 transition duration-300 cursor-pointer">
+          <Link to="/">Home</Link> 
+          </li>
+          <li className="hover:text-orange-500 transition duration-300 cursor-pointer">
+          <Link to="/about">About Us</Link>
+          </li>
+          <li className="hover:text-orange-500 transition duration-300 cursor-pointer">
+            <a href="#services">Services</a>
+          </li>
+          <li className="hover:text-orange-500 transition duration-300 cursor-pointer">
+            <a href="#contact">Contact</a>
+          </li>
         </ul>
 
         {/* CTA Button (Desktop) */}
@@ -52,10 +61,18 @@ const Navbar = () => {
       {/* Mobile Menu (Slide Down) */}
       <div className={`md:hidden absolute bg-white w-full transition-all duration-500 ease-in-out ${navOpen ? 'top-16 opacity-100' : 'top-[-400px] opacity-0'}`}>
         <ul className="flex flex-col items-center space-y-4 py-8 text-lg font-medium text-gray-700">
-          <li className="hover:text-orange-500 transition duration-300 cursor-pointer">Home</li>
-          <li className="hover:text-orange-500 transition duration-300 cursor-pointer">About</li>
-          <li className="hover:text-orange-500 transition duration-300 cursor-pointer">Services</li>
-          <li className="hover:text-orange-500 transition duration-300 cursor-pointer">Contact</li>
+          <li className="hover:text-orange-500 transition duration-300 cursor-pointer">
+            <a href="#home">Home</a>
+          </li>
+          <li className="hover:text-orange-500 transition duration-300 cursor-pointer">
+            <a href="#about">About</a>
+          </li>
+          <li className="hover:text-orange-500 transition duration-300 cursor-pointer">
+            <a href="#services">Services</a>
+          </li>
+          <li className="hover:text-orange-500 transition duration-300 cursor-pointer">
+            <a href="#contact">Contact</a>
+          </li>
         </ul>
       </div>
     </div>

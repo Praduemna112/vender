@@ -60,7 +60,7 @@ const Feature = () => {
         {/* Second Section */}
         <div className="flex flex-col sm:flex-row items-center gap-2">
           {/* Text Section (Left Side) */}
-          <div className="w-full sm:w-1/2 sm:ml-10 sm:ml-28 pr-4 sm:pr-8">
+          <div className="w-full sm:w-1/2 sm:ml-28 pr-4 sm:pr-8">
             <h2 className="text-3xl font-semibold text-orange-500 mb-3">Refreshing Range of Beverages</h2>
             <ul className="list-disc pl-5 space-y-2 text-lg">
               <li>Healthy & Nutritious Juices</li>
@@ -110,7 +110,7 @@ const Feature = () => {
         <div className="mt-28"></div> {/* Fourth Section */}
         <div className="flex flex-col sm:flex-row items-center gap-2">
           {/* Text Section (Left Side) */}
-          <div className="w-full sm:w-1/2 sm:ml-10 sm:ml-28 pr-4 sm:pr-8">
+          <div className="w-full sm:w-1/2  sm:ml-28 pr-4 sm:pr-8">
             <h2 className="text-3xl font-semibold text-orange-500 mb-3">Pantry Supply Services</h2>
             <h3 className="text-lg font-semibold mb-3">
               Allow Vendiman to manage your pantry supplies through Smart Micro Retail Solutions. Use our expertise to save time/resources.
