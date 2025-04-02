@@ -139,7 +139,7 @@ const Feature = () => {
 
         <div className="bg-white text-gray-900 py-16 px-6 sm:px-20">
           {/* Heading */}
-          <h2 className="text-center text-4xl font-bold text-orange-500 mb-10">Why choose Vendiman?</h2>
+          <h2 className="text-center text-4xl font-bold text-orange-500 mb-10">Why choose Vender?</h2>
 
           <div className="flex flex-col sm:flex-row items-center gap-14">
             {/* Vending Machine Image */}
