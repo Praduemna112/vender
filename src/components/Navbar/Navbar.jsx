@@ -43,7 +43,7 @@ const Navbar = () => {
             <a href="#services">Services</a>
           </li>
           <li className="hover:text-orange-500 transition duration-300 cursor-pointer">
-            <a href="#contact">Contact</a>
+          <Link to="/contact">Contact</Link>
           </li>
         </ul>
 

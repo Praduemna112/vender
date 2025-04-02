@@ -9,6 +9,7 @@ import Feacture from "./components/FeactureSection/Feacture";
 import AboutUs from "./components/AboutUs/AboutUs";
 import Footer from "./components/Footer/Footer";
 import ScrollToTop from "./components/ScrollToTop";
+import Contact from "./components/Contact/Contact";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -22,6 +23,7 @@ function App() {
           <Route path="/" element={<Home />} /> {/* Home route */}
           <Route path="/about" element={<AboutUs />} /> {/* Aboutus page */}
           <Route path="/features" element={<Feacture />} /> {/* Feature page */}
+          <Route path="/contact" element={<Contact />} /> {/* Feature page */}
         </Routes>
         <Footer />
       </div>
