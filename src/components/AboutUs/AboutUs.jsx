@@ -8,11 +8,11 @@ const AboutUs = () => {
       <div className="relative">
         {/* Background Image & Overlay */}
         <div className="h-[10vh] md:h-[20vh]">
-          <div className="absolute inset-0 bg-orange-300 opacity-80"></div>
+          <div className="absolute inset-0 bg-orange-700 opacity-80"></div>
         </div>
 
         {/* Hero Section */}
-        <div className="relative z-10 flex flex-col items-center justify-center h-[30vh] md:h-[60vh] text-white text-center">
+        <div className="relative z-10 flex flex-col items-center justify-center h-[10vh] md:h-[40vh] text-white text-center">
           <h1 className="text-3xl md:text-5xl font-bold mb-4">
             Smart Retail Solutions
           </h1>

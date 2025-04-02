@@ -12,11 +12,11 @@ const Contact = () => {
     },
     formWrapper: {
       width: '100%',
-      maxWidth: '1024px',
+      maxWidth: '800px',
       backgroundColor: '#ffffff',
       borderRadius: '16px',
       padding: '24px',
-      boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+      // boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
       marginTop: '20px',
     },
     iframe: {
