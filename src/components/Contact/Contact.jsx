@@ -1,16 +1,23 @@
 import React from 'react';
-import '../styles/Contact.css'; // Import CSS file
+import './Contact.css'; // Import CSS file
 
 const Contact = () => {
   return (
-    <div className="contact-container">
-      <div className="hero-section">
-        <div className="hero-overlay"></div>
-        <div className="hero-content">
-          <h1>May I help You</h1>
-          <div className="hero-gradient"></div>
-        </div>
+    <div className="w-full font-medium">
+    <div className="relative">
+      {/* Background Image & Overlay */}
+      <div className="h-[10vh] md:h-[20vh]">
+        <div className="absolute inset-0 bg-orange-700 opacity-80"></div>
       </div>
+
+      {/* Hero Section */}
+      <div className="relative z-10 flex flex-col items-center justify-center h-[10vh] md:h-[40vh] text-white text-center">
+        <h1 className="text-3xl md:text-5xl font-bold mb-4">
+        We’d love to hear from you…
+        </h1>
+        <div className="w-full h-20 bg-gradient-to-r from-orange-400 to-transparent rounded-tl-full rounded-tr-full mt-8"></div>
+      </div>
+    </div>
 
       <div className="form-container">
         <div className="form-wrapper">
