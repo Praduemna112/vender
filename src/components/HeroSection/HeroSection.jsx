@@ -1,9 +1,9 @@
-import React from 'react'
-import './HeroSection.css'
+import React from "react";
+import "./HeroSection.css";
 
 const HeroSection = () => {
   return (
-    <div className="hero">
+    <div id="hero" className="hero">
       <div className="hero-text">
         <h1 className="text-4xl md:text-6xl font-bold mb-6">
           Reimagining Vending. India’s Foremost in Instant Commerce Via Smart
@@ -18,7 +18,7 @@ const HeroSection = () => {
         </button>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default HeroSection
+export default HeroSection;

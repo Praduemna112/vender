@@ -7,53 +7,51 @@ import { IoMail } from "react-icons/io5";
 
 const Navbar = () => {
   const [navOpen, setNavOpen] = useState(false);
-  const [visible, setVisible] = useState(true);
-  let lastScrollY = window.scrollY;
-
-  const handleScroll = () => {
-    if (window.scrollY > lastScrollY) {
-      setVisible(false);
-    } else {
-      setVisible(true);
-    }
-    lastScrollY = window.scrollY;
-  };
+  const [isFixed, setIsFixed] = useState(true);
 
   useEffect(() => {
+    const heroSection = document.getElementById("hero");
+    const heroHeight = heroSection ? heroSection.offsetHeight : 0;
+
+    const handleScroll = () => {
+      if (window.scrollY > heroHeight) {
+        setIsFixed(false); // Navbar stops being fixed after hero section
+      } else {
+        setIsFixed(true);
+      }
+    };
+
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <div
-      className={`w-full fixed top-0 left-0 z-10 transition-transform duration-300 ${
-        visible ? "translate-y-0" : "-translate-y-full"
+      className={`w-full top-0 left-0 z-50 transition-all duration-300 ${
+        isFixed ? "fixed bg-orange-400" : "absolute bg-transparent"
       }`}
     >
-      <nav className="flex justify-between items-center px-2 py-4 max-w-7xl mx-auto">
-        {/* Logo on the left */}
+      <nav className="flex justify-between items-center px-4 py-4 max-w-7xl mx-auto">
         <div className="flex items-center">
-          <img src={logo} alt="Logo" className="w-13 h-12 mr-4 rounded-full" />
+          <img src={logo} alt="Logo" className="w-12 h-12 mr-4 rounded-full" />
           <h1 className="text-2xl font-bold text-white">Vender</h1>
         </div>
 
-        {/* Links, Button, and Menu Icon on the right */}
-        <div className="flex items-center space-x-8 ml-auto"> {/* Added ml-auto for more gap */}
-          {/* Nav Links (Desktop) */}
-          <ul className="hidden md:flex space-x-8 text-lg font-medium mr-2 text-white">
-            <li className="hover:text-orange-500 transition duration-300 cursor-pointer">
-              <Link to="/">Home</Link>
-            </li>
-            <li className="hover:text-orange-500 transition duration-300 cursor-pointer">
-              <Link to="/about">About Us</Link>
-            </li>
-            <li className="hover:text-orange-500 transition duration-300 cursor-pointer">
-              <a href="#services">Services</a>
-            </li>
-            <li className="hover:text-orange-500 transition duration-300 cursor-pointer">
-              <Link to="/contact">Contact</Link>
-            </li>
-            <li className="hover:text-orange-500 transition duration-300 cursor-pointer flex items-center space-x-2">
+        <div className="flex items-center space-x-8 ml-auto">
+        <ul className="hidden md:flex space-x-8 text-lg font-medium text-black">
+  <li className="relative hover:text-white transition duration-300 after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-white after:left-0 after:bottom-[-2px] after:transition-all after:duration-300 hover:after:w-full">
+    <Link to="/">Home</Link>
+  </li>
+  <li className="relative hover:text-white transition duration-300 after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-white after:left-0 after:bottom-[-2px] after:transition-all after:duration-300 hover:after:w-full">
+    <Link to="/about">About Us</Link>
+  </li>
+  <li className="relative hover:text-white transition duration-300 after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-white after:left-0 after:bottom-[-2px] after:transition-all after:duration-300 hover:after:w-full">
+    <Link to="/services">Services</Link>
+  </li>
+  <li className="relative hover:text-white transition duration-300 after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-white after:left-0 after:bottom-[-2px] after:transition-all after:duration-300 hover:after:w-full">
+    <Link to="/contact">Contact</Link>
+  </li>
+            <li className="relative hover:text-white transition duration-300 after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-white after:left-0 after:bottom-[-2px] after:transition-all after:duration-300 hover:after:w-full">
               <a
                 href="https://wa.me/918308557539"
                 target="_blank"
@@ -64,7 +62,7 @@ const Navbar = () => {
                 <span>+91 8308557539</span>
               </a>
             </li>
-            <li className="hover:text-orange-500 transition duration-300 cursor-pointer flex items-center space-x-2">
+            <li className="relative hover:text-white transition duration-300 after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-white after:left-0 after:bottom-[-2px] after:transition-all after:duration-300 hover:after:w-full">
               <a
                 href="mailto:deosthalepraduemna@gmail.com"
                 target="_blank"
@@ -81,41 +79,49 @@ const Navbar = () => {
                 <span>deosthalepraduemna@gmail.com</span>
               </a>
             </li>
+
           </ul>
 
-          {/* CTA Button (Desktop) */}
-          <button className="hidden md:block bg-orange-500 text-white py-2 px-6 rounded-full hover:bg-orange-600 transition duration-300">
-            Get Started
-          </button>
 
-          {/* Mobile Menu Button */}
           <div
-            onClick={() => setNavOpen(!navOpen)}
+            onClick={() => setNavOpen(true)}
             className="md:hidden text-white text-3xl cursor-pointer"
           >
-            {navOpen ? <AiOutlineClose /> : <AiOutlineMenu />}
+            <AiOutlineMenu />
           </div>
         </div>
       </nav>
 
-      {/* Mobile Menu (Slide Down) */}
+      {navOpen && (
+        <div
+          onClick={() => setNavOpen(false)}
+          className="fixed inset-0 bg-black bg-opacity-50 z-40"
+        />
+      )}
+
       <div
-        className={`md:hidden absolute bg-white w-full transition-all duration-500 ease-in-out ${
-          navOpen ? "top-16 opacity-100" : "top-[-400px] opacity-0"
+        className={`fixed top-0 right-0 h-screen w-3/4 bg-white z-50 transform transition-transform duration-500 ${
+          navOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
+        <div className="flex justify-end p-4">
+          <AiOutlineClose
+            className="text-3xl cursor-pointer"
+            onClick={() => setNavOpen(false)}
+          />
+        </div>
         <ul className="flex flex-col items-center space-y-4 py-8 text-lg font-medium text-gray-700">
-          <li className="hover:text-orange-500 transition duration-300 cursor-pointer">
-            <Link to="/">Home</Link>
+          <li>
+            <Link to="/" onClick={() => setNavOpen(false)}>Home</Link>
           </li>
-          <li className="hover:text-orange-500 transition duration-300 cursor-pointer">
-            <Link to="/about">About Us</Link>
+          <li>
+            <Link to="/about" onClick={() => setNavOpen(false)}>About Us</Link>
           </li>
-          <li className="hover:text-orange-500 transition duration-300 cursor-pointer">
-            <a href="#services">Services</a>
+          <li>
+            <Link to="/services" onClick={() => setNavOpen(false)}>Services</Link>
           </li>
-          <li className="hover:text-orange-500 transition duration-300 cursor-pointer">
-            <Link to="/contact">Contact</Link>
+          <li>
+            <Link to="/contact" onClick={() => setNavOpen(false)}>Contact</Link>
           </li>
         </ul>
       </div>

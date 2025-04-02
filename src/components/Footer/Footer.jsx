@@ -18,8 +18,13 @@ const Footer = () => {
                 About Us
               </Link>
             </li>
-            <li className="cursor-pointer hover:text-orange-500 transition-colors duration-300">
-              Contact Us
+            <li>
+              <Link
+                to="/contact"
+                className="hover:text-orange-500 transition-colors duration-300"
+              >
+                Contact
+              </Link>
             </li>
             <li className="cursor-pointer hover:text-orange-500 transition-colors duration-300">
               Careers
