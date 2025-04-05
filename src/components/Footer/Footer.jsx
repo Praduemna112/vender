@@ -29,8 +29,13 @@ const Footer = () => {
             <li className="cursor-pointer hover:text-orange-500 transition-colors duration-300">
               Careers
             </li>
-            <li className="cursor-pointer hover:text-orange-500 transition-colors duration-300">
-              Enquire Now
+            <li>
+              <Link
+                to="/Enquire"
+                className="hover:text-orange-500 transition-colors duration-300"
+              >
+                Enquire Now
+              </Link>
             </li>
           </ul>
           <div className="flex space-x-4 mt-4">
