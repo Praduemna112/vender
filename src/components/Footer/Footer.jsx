@@ -1,8 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+
+// ✅ Ensure these files exist in src/assets/
 import googleStore from "../../assets/googleStore.jpg";
-import appStore from "../../assets/appStore.jpg";
+import appStore from "../../assets/appStore.jpg"; // Ensure correct name & case
 
 const Footer = () => {
   return (
