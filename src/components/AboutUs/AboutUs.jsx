@@ -7,16 +7,16 @@ const AboutUs = () => {
     <div className="w-full font-medium">
       <div className="relative">
         {/* Background Image & Overlay */}
-        <div className="h-[10vh] md:h-[20vh]">
+        <div className="h-[20vh] md:h-[25vh]">
           <div className="absolute inset-0 bg-orange-700 opacity-80"></div>
         </div>
 
         {/* Hero Section */}
-        <div className="relative z-10 flex flex-col items-center justify-center h-[10vh] md:h-[40vh] text-white text-center">
-          <h1 className="text-3xl md:text-5xl font-bold mb-4">
+        <div className="relative z-10 flex flex-col items-center justify-center h-[25vh] md:h-[30vh] text-white text-center">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
             Smart Retail Solutions
           </h1>
-          <div className="w-full h-20 bg-gradient-to-r from-orange-400 to-transparent rounded-tl-full rounded-tr-full mt-8"></div>
+          <div className="w-full h-16 sm:h-20 bg-gradient-to-r from-orange-400 to-transparent rounded-tl-full rounded-tr-full mt-4"></div>
         </div>
       </div>
 

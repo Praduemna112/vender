@@ -14,14 +14,14 @@ const Contact = () => {
 
         {/* Hero text and design */}
         <div className="relative z-10 flex flex-col items-center justify-center h-[25vh] md:h-[30vh] text-white text-center">
-          <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold mb-4 px-4">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 px-4">
             We’d love to hear from you…
           </h1>
           <div className="w-full h-16 sm:h-20 bg-gradient-to-r from-orange-400 to-transparent rounded-tl-full rounded-tr-full mt-4"></div>
         </div>
       </div>
       {/* Google Form */}
-      <div className="px-4 sm:px-10 mt-10">
+      <div className="px-10 sm:px-10 mt-12">
         <iframe
           src="https://docs.google.com/forms/d/e/1FAIpQLSe80A5HFnin0RaoGiUM5qtMK17H3gMDtYknxanBQlVj_D_MNg/viewform?embedded=true"
           className="w-full min-h-[1800px] border-none rounded-md shadow"
