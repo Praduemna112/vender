@@ -4,6 +4,7 @@ import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
 // ✅ Ensure these files exist in src/assets/
 import googleStore from "../../assets/googleStore.jpg";
+import appStore from "../../assets/appStore.jpg";
 
 const Footer = () => {
   return (
@@ -112,6 +113,11 @@ const Footer = () => {
                 className="h-14 cursor-pointer transition-transform duration-300 transform hover:scale-110"
               />
             </a>
+            <img
+                src={appStore}
+                alt="app store"
+                className="h-14 cursor-pointer transition-transform duration-300 transform hover:scale-110"
+              />
           </div>
         </div>
       </div>
