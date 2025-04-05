@@ -71,7 +71,7 @@ const EnquirePage = () => {
           id="carouselExampleIndicators"
           className="carousel slide w-full max-w-[1200px]"
           data-bs-ride="carousel"
-          data-bs-interval="1000"
+          data-bs-interval="2000"
         >
           <div className="carousel-indicators">
             <button
