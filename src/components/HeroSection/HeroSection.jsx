@@ -14,9 +14,9 @@ const HeroSection = () => {
         backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${heroBg})`,
       }}
     >
-      {/* Main Text Content */}
-      <div className="text-center text-white max-w-3xl z-10">
-        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6">
+      {/* Main Text Content with added margin-top */}
+      <div className="text-center text-white max-w-3xl z-10 mt-20">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
           Reimagining Vending. India’s Foremost in Instant Commerce Via Smart
           Micro Retail Solutions!
         </h1>
