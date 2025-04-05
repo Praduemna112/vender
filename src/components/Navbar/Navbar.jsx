@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import logo from "../../assets/logo.jpeg";
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { FaWhatsapp } from "react-icons/fa6";
 import { IoMail } from "react-icons/io5";
@@ -38,43 +38,65 @@ const Navbar = () => {
         </Link>
 
         <div className="flex items-center space-x-8 ml-auto">
+          {/* Desktop Menu */}
           <ul className="hidden md:flex space-x-8 text-lg font-medium text-black">
-            <li className="relative hover:text-white transition duration-300 after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-white after:left-0 after:bottom-[-2px] after:transition-all after:duration-300 hover:after:w-full">
-              <Link to="/">Home</Link>
-            </li>
-            <li className="relative hover:text-white transition duration-300 after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-white after:left-0 after:bottom-[-2px] after:transition-all after:duration-300 hover:after:w-full">
-              <Link to="/about">About Us</Link>
-            </li>
-            <li className="relative hover:text-white transition duration-300 after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-white after:left-0 after:bottom-[-2px] after:transition-all after:duration-300 hover:after:w-full">
-              <Link to="/services">Services</Link>
-            </li>
-            <li className="relative hover:text-white transition duration-300 after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-white after:left-0 after:bottom-[-2px] after:transition-all after:duration-300 hover:after:w-full">
-              <Link to="/contact">Contact</Link>
-            </li>
-            <li className="relative hover:text-white transition duration-300 after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-white after:left-0 after:bottom-[-2px] after:transition-all after:duration-300 hover:after:w-full">
+            {[
+              { to: "/", label: "Home" },
+              { to: "/about", label: "About Us" },
+              { to: "/services", label: "Services" },
+              { to: "/contact", label: "Contact" },
+            ].map((item) => (
+              <li key={item.to} className="relative group">
+                <NavLink
+                  to={item.to}
+                  className={({ isActive }) =>
+                    `transition duration-300 pb-1 ${
+                      isActive ? "text-white" : "hover:text-white"
+                    }`
+                  }
+                >
+                  {({ isActive }) => (
+                    <>
+                      {item.label}
+                      <span
+                        className={`absolute left-0 bottom-0 h-[2px] bg-white transition-all duration-300 ${
+                          isActive ? "w-full" : "w-0 group-hover:w-full"
+                        }`}
+                      />
+                    </>
+                  )}
+                </NavLink>
+              </li>
+            ))}
+
+            {/* WhatsApp */}
+            <li className="flex items-center">
               <a
                 href="https://wa.me/918308557539"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center"
+                className="flex items-center hover:text-white transition duration-300"
               >
                 <FaWhatsapp className="mr-1 text-green-500" />
-                <span>+91 8308557539</span>
+                +91 8308557539
               </a>
             </li>
-            <li className="relative hover:text-white transition duration-300 after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-white after:left-0 after:bottom-[-2px] after:transition-all after:duration-300 hover:after:w-full">
+
+            {/* Email */}
+            <li className="flex items-center">
               <a
                 href="mailto:deosthalepraduemna@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center"
+                className="flex items-center hover:text-white transition duration-300"
               >
                 <IoMail className="mr-1 text-blue-600" />
-                <span>deosthalepraduemna@gmail.com</span>
+                deosthalepraduemna@gmail.com
               </a>
             </li>
           </ul>
 
+          {/* Mobile Menu Icon */}
           <div
             onClick={() => setNavOpen(true)}
             className="md:hidden text-white text-3xl cursor-pointer"
@@ -84,6 +106,7 @@ const Navbar = () => {
         </div>
       </nav>
 
+      {/* Mobile Menu Overlay */}
       {navOpen && (
         <div
           onClick={() => setNavOpen(false)}
@@ -91,6 +114,7 @@ const Navbar = () => {
         />
       )}
 
+      {/* Mobile Menu Drawer */}
       <div
         className={`fixed top-0 right-0 h-screen w-3/4 bg-white z-50 transform transition-transform duration-500 ${
           navOpen ? "translate-x-0" : "translate-x-full"
