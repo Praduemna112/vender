@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import googleStore from "../../assets/googleStore.jpg";
+import appStore from "../../assets/appStore.jpg";
 
 const Footer = () => {
   return (
@@ -97,17 +99,29 @@ const Footer = () => {
           <p className="mt-4 text-orange-500 font-bold cursor-pointer hover:text-orange-600 transition-colors duration-300">
             Download our App to get Instant Nourishment
           </p>
-          <div className="flex space-x-4 mt-4">
-            <img
-              src="/path/to/google-play.png"
-              alt="Google Play"
-              className="h-8 cursor-pointer transition-transform duration-300 transform hover:scale-110"
-            />
-            <img
-              src="/path/to/app-store.png"
-              alt="App Store"
-              className="h-8 cursor-pointer transition-transform duration-300 transform hover:scale-110"
-            />
+          <div className="flex space-x-4 mt-4 w-auto h-18">
+            <a
+              href="https://play.google.com/store/apps/details?id=com.yourapp.package"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={googleStore}
+                alt="Google Play"
+                className="h-14 cursor-pointer transition-transform duration-300 transform hover:scale-110"
+              />
+            </a>
+            <a
+              href="https://apps.apple.com/in/app/your-app-name/id1234567890"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={appStore}
+                alt="App Store"
+                className="h-14 cursor-pointer transition-transform duration-300 transform hover:scale-110"
+              />
+            </a>
           </div>
         </div>
       </div>
