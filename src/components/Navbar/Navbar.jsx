@@ -15,7 +15,7 @@ const Navbar = () => {
 
     const handleScroll = () => {
       if (window.scrollY > heroHeight) {
-        setIsFixed(false); // Navbar stops being fixed after hero section
+        setIsFixed(false);
       } else {
         setIsFixed(true);
       }
@@ -32,10 +32,10 @@ const Navbar = () => {
       }`}
     >
       <nav className="flex justify-between items-center px-4 py-4 max-w-7xl mx-auto">
-        <div className="flex items-center">
+        <Link to="/" className="flex items-center">
           <img src={logo} alt="Logo" className="w-12 h-12 mr-4 rounded-full" />
           <h1 className="text-2xl font-bold text-white">Vender</h1>
-        </div>
+        </Link>
 
         <div className="flex items-center space-x-8 ml-auto">
           <ul className="hidden md:flex space-x-8 text-lg font-medium text-black">
