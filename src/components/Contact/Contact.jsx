@@ -24,7 +24,7 @@ const Contact = () => {
       <div className="px-4 sm:px-10 mt-10">
         <iframe
           src="https://docs.google.com/forms/d/e/1FAIpQLSe80A5HFnin0RaoGiUM5qtMK17H3gMDtYknxanBQlVj_D_MNg/viewform?embedded=true"
-          className="w-full min-h-[1500px] border-none rounded-md shadow"
+          className="w-full min-h-[1800px] border-none rounded-md shadow"
           title="Google Form"
         >
           Loading…
