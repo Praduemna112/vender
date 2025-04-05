@@ -38,19 +38,19 @@ const Navbar = () => {
         </div>
 
         <div className="flex items-center space-x-8 ml-auto">
-        <ul className="hidden md:flex space-x-8 text-lg font-medium text-black">
-  <li className="relative hover:text-white transition duration-300 after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-white after:left-0 after:bottom-[-2px] after:transition-all after:duration-300 hover:after:w-full">
-    <Link to="/">Home</Link>
-  </li>
-  <li className="relative hover:text-white transition duration-300 after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-white after:left-0 after:bottom-[-2px] after:transition-all after:duration-300 hover:after:w-full">
-    <Link to="/about">About Us</Link>
-  </li>
-  <li className="relative hover:text-white transition duration-300 after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-white after:left-0 after:bottom-[-2px] after:transition-all after:duration-300 hover:after:w-full">
-    <Link to="/services">Services</Link>
-  </li>
-  <li className="relative hover:text-white transition duration-300 after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-white after:left-0 after:bottom-[-2px] after:transition-all after:duration-300 hover:after:w-full">
-    <Link to="/contact">Contact</Link>
-  </li>
+          <ul className="hidden md:flex space-x-8 text-lg font-medium text-black">
+            <li className="relative hover:text-white transition duration-300 after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-white after:left-0 after:bottom-[-2px] after:transition-all after:duration-300 hover:after:w-full">
+              <Link to="/">Home</Link>
+            </li>
+            <li className="relative hover:text-white transition duration-300 after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-white after:left-0 after:bottom-[-2px] after:transition-all after:duration-300 hover:after:w-full">
+              <Link to="/about">About Us</Link>
+            </li>
+            <li className="relative hover:text-white transition duration-300 after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-white after:left-0 after:bottom-[-2px] after:transition-all after:duration-300 hover:after:w-full">
+              <Link to="/services">Services</Link>
+            </li>
+            <li className="relative hover:text-white transition duration-300 after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-white after:left-0 after:bottom-[-2px] after:transition-all after:duration-300 hover:after:w-full">
+              <Link to="/contact">Contact</Link>
+            </li>
             <li className="relative hover:text-white transition duration-300 after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-white after:left-0 after:bottom-[-2px] after:transition-all after:duration-300 hover:after:w-full">
               <a
                 href="https://wa.me/918308557539"
@@ -69,19 +69,11 @@ const Navbar = () => {
                 rel="noopener noreferrer"
                 className="flex items-center"
               >
-               <IoMail className="mr-1 text-blue-600" />
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M16 12l-4-4m0 0l-4 4m4-4v12M20 12v8a2 2 0 01-2 2H6a2 2 0 01-2-2v-8"
-                  />
+                <IoMail className="mr-1 text-blue-600" />
                 <span>deosthalepraduemna@gmail.com</span>
               </a>
             </li>
-
           </ul>
-
 
           <div
             onClick={() => setNavOpen(true)}
@@ -112,16 +104,24 @@ const Navbar = () => {
         </div>
         <ul className="flex flex-col items-center space-y-4 py-8 text-lg font-medium text-gray-700">
           <li>
-            <Link to="/" onClick={() => setNavOpen(false)}>Home</Link>
+            <Link to="/" onClick={() => setNavOpen(false)}>
+              Home
+            </Link>
           </li>
           <li>
-            <Link to="/about" onClick={() => setNavOpen(false)}>About Us</Link>
+            <Link to="/about" onClick={() => setNavOpen(false)}>
+              About Us
+            </Link>
           </li>
           <li>
-            <Link to="/services" onClick={() => setNavOpen(false)}>Services</Link>
+            <Link to="/services" onClick={() => setNavOpen(false)}>
+              Services
+            </Link>
           </li>
           <li>
-            <Link to="/contact" onClick={() => setNavOpen(false)}>Contact</Link>
+            <Link to="/contact" onClick={() => setNavOpen(false)}>
+              Contact
+            </Link>
           </li>
         </ul>
       </div>
