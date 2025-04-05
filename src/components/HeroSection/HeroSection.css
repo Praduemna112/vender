@@ -40,4 +40,32 @@
   .hero-text p {
     font-size: 0.875rem;
   }
+}.video-icon-wrapper {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.video-icon-wrapper svg {
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.video-icon-wrapper svg:hover {
+  transform: scale(1.1);
+}
+
+.video-player-wrapper {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-video {
+  width: 100%;
+  max-width: 10px;
+  border-radius: 1rem;
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
 }
