@@ -113,17 +113,12 @@ const Footer = () => {
                 className="h-14 cursor-pointer transition-transform duration-300 transform hover:scale-110"
               />
             </a>
-            <a
-              href="https://apps.apple.com/in/app/your-app-name/id1234567890"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src={appStore}
-                alt="App Store"
-                className="h-14 cursor-pointer transition-transform duration-300 transform hover:scale-110"
-              />
-            </a>
+
+            <img
+              src={appStore}
+              alt="App Store"
+              className="h-14 cursor-pointer transition-transform duration-300 transform hover:scale-110"
+            />
           </div>
         </div>
       </div>
