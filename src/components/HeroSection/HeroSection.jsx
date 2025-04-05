@@ -1,5 +1,6 @@
 import React from "react";
 import "./HeroSection.css";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
@@ -13,9 +14,11 @@ const HeroSection = () => {
           Our mission is to revolutionize the way people shop and interact with
           their environment through our innovative micro retail solutions.
         </p>
-        <button className="bg-orange-500 text-white py-2 px-6 rounded-full hover:bg-orange-600 transition duration-300">
-          Know More
-        </button>
+        <Link to="/about">
+          <button className="bg-orange-500 text-white py-2 px-6 rounded-full hover:bg-orange-600 transition duration-300">
+            Know More
+          </button>
+        </Link>
       </div>
     </div>
   );
