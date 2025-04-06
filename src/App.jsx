@@ -11,7 +11,7 @@ import Footer from "./components/Footer/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 import Contact from "./components/Contact/Contact";
 import EnquirePage from "./components/EnquirePage/EnquirePage";
-import Model from "./components/ModelView/Model";
+import Model from "./components/ModelView/Model.jsx";
 
 function App() {
   const [count, setCount] = useState(0);
