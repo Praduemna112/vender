@@ -27,7 +27,7 @@ const Navbar = () => {
 
   return (
     <div
-      className={`w-full top-0 left-0 z-50 transition-all duration-300 ${
+      className={`w-full top-0 left-0 z-[100] transition-all duration-300 ${
         isFixed ? "fixed bg-orange-400" : "absolute bg-transparent"
       }`}
     >
@@ -74,7 +74,7 @@ const Navbar = () => {
           {/* Mobile Menu Icon */}
           <div
             onClick={() => setNavOpen(true)}
-            className="md:hidden text-white text-3xl cursor-pointer"
+            className="md:hidden bg-orange-400 text-white text-3xl cursor-pointer p-2 rounded"
           >
             <AiOutlineMenu />
           </div>
@@ -85,13 +85,13 @@ const Navbar = () => {
       {navOpen && (
         <div
           onClick={() => setNavOpen(false)}
-          className="fixed inset-0 bg-black bg-opacity-50 z-40"
+          className="fixed inset-0 bg-black bg-opacity-50 z-[90]"
         />
       )}
 
       {/* Mobile Menu Drawer */}
       <div
-        className={`fixed top-0 right-0 h-screen w-3/5 bg-gradient-to-b from-orange-400 via-orange-300 to-orange-200 text-white z-50 transform transition-transform duration-500 ${
+        className={`fixed top-0 right-0 h-screen w-3/5 bg-gradient-to-b from-orange-400 via-orange-300 to-orange-200 text-white z-[100] transform transition-transform duration-500 ${
           navOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -102,52 +102,23 @@ const Navbar = () => {
           />
         </div>
         <ul className="flex flex-col items-start px-6 space-y-6 py-8 text-lg font-medium">
-          <li>
-            <Link
-              to="/"
-              onClick={() => setNavOpen(false)}
-              className="hover:text-white transition duration-300"
-            >
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/about"
-              onClick={() => setNavOpen(false)}
-              className="hover:text-white transition duration-300"
-            >
-              About Us
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/services"
-              onClick={() => setNavOpen(false)}
-              className="hover:text-white transition duration-300"
-            >
-              Services
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/models"
-              onClick={() => setNavOpen(false)}
-              className="hover:text-white transition duration-300"
-            >
-              Models
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/contact"
-              onClick={() => setNavOpen(false)}
-              className="hover:text-white transition duration-300"
-            >
-              Contact
-            </Link>
-          </li>
-          {/* WhatsApp and Email only in mobile view */}
+          {[
+            { to: "/", label: "Home" },
+            { to: "/about", label: "About Us" },
+            { to: "/services", label: "Services" },
+            { to: "/models", label: "Models" },
+            { to: "/contact", label: "Contact" },
+          ].map((item) => (
+            <li key={item.to}>
+              <Link
+                to={item.to}
+                onClick={() => setNavOpen(false)}
+                className="hover:text-white transition duration-300"
+              >
+                {item.label}
+              </Link>
+            </li>
+          ))}
           <li className="flex items-center gap-2">
             <FaWhatsapp className="text-green-200" />
             <a
