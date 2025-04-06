@@ -26,7 +26,8 @@ const Contact = () => {
           className="relative z-10 flex flex-col items-center justify-center h-[25vh] md:h-[30vh] text-white text-center"
           data-aos="fade-down"
         >
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 px-4">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 px-4 break-words max-w-screen-sm mx-auto">
+
             We’d love to hear from you…
           </h1>
           <div className="w-full h-16 sm:h-20 bg-gradient-to-r from-orange-400 to-transparent rounded-tl-full rounded-tr-full mt-4"></div>
