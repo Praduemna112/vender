@@ -3,7 +3,7 @@ import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 const TypeWriter = () => {
   const [text] = useTypewriter({
-    words: ['Snacks', 'Smart', 'Next-gen', 'Vending machines','Modern'],
+    words: ['Snacks', 'Smart', 'Next-gen','Modern'],
     loop: true,
     delaySpeed: 2000,
     typeSpeed: 100,
