@@ -15,10 +15,10 @@ const Contact = () => {
   }, []);
 
   return (
-    <div className="w-full font-medium">
+    <div className="w-full font-medium overflow-x-hidden">
       {/* Hero Section */}
       <div className="relative w-full">
-        <div className="h-[30vh] sm:h-[35vh] md:h-[25vh]">
+        <div className="w-full h-[30vh] sm:h-[35vh] md:h-[25vh] overflow-hidden">
           <div className="absolute inset-0 bg-orange-700 opacity-80"></div>
         </div>
 
