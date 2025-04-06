@@ -1,6 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import {
+  FaMapMarkerAlt,
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+} from "react-icons/fa";
 
 // ✅ Ensure these files exist in src/assets/
 import googleStore from "../../assets/googleStore.jpg";
@@ -17,7 +22,7 @@ const Footer = () => {
             <li>
               <Link
                 to="/about"
-                className="hover:text-orange-500 transition-colors duration-300"
+                className="hover:text-orange-500 hover:underline transition-colors duration-300"
               >
                 About Us
               </Link>
@@ -25,18 +30,18 @@ const Footer = () => {
             <li>
               <Link
                 to="/contact"
-                className="hover:text-orange-500 transition-colors duration-300"
+                className="hover:text-orange-500 hover:underline transition-colors duration-300"
               >
                 Contact
               </Link>
             </li>
-            <li className="cursor-pointer hover:text-orange-500 transition-colors duration-300">
+            <li className="cursor-pointer hover:text-orange-500 hover:underline transition-colors duration-300">
               Careers
             </li>
             <li>
               <Link
                 to="/Enquire"
-                className="hover:text-orange-500 transition-colors duration-300"
+                className="hover:text-orange-500 hover:underline transition-colors duration-300"
               >
                 Enquire Now
               </Link>
@@ -53,13 +58,13 @@ const Footer = () => {
         <div>
           <h3 className="font-bold mb-4">Legal</h3>
           <ul className="space-y-2">
-            <li className="cursor-pointer hover:text-orange-500 transition-colors duration-300">
+            <li className="cursor-pointer hover:text-orange-500 hover:underline transition-colors duration-300">
               Privacy Policy
             </li>
-            <li className="cursor-pointer hover:text-orange-500 transition-colors duration-300">
+            <li className="cursor-pointer hover:text-orange-500 hover:underline transition-colors duration-300">
               Terms & Conditions
             </li>
-            <li className="cursor-pointer hover:text-orange-500 transition-colors duration-300">
+            <li className="cursor-pointer hover:text-orange-500 hover:underline transition-colors duration-300">
               Return, Refund & Cancellation Policy
             </li>
           </ul>
@@ -81,7 +86,7 @@ const Footer = () => {
             ].map((item, index) => (
               <li
                 key={index}
-                className="cursor-pointer hover:text-orange-500 transition-colors duration-300"
+                className="cursor-pointer hover:text-orange-500 hover:underline transition-colors duration-300"
               >
                 {item}
               </li>
@@ -92,13 +97,22 @@ const Footer = () => {
         {/* Contact Section */}
         <div>
           <h3 className="font-bold mb-4">Contact</h3>
-          <p className="hover:text-orange-500 transition-colors duration-300">
+          <p className="hover:text-orange-500 hover:underline transition-colors duration-300">
             SUNCITY WING B/ 2 Apartment building in Solapur, Maharashtra
           </p>
-          <p className="mt-2 cursor-pointer hover:text-orange-500 transition-colors duration-300">
-            Get Directions
+          <p className="mt-2 cursor-pointer hover:text-orange-500 hover:underline transition-colors duration-300">
+            <a
+              href="https://maps.app.goo.gl/JjZmPE93rFyCaDnj6"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center hover:text-orange-500"
+            >
+              Get Directions
+              <FaMapMarkerAlt className="ml-2 text-red-600" />
+            </a>
           </p>
-          <p className="mt-4 text-orange-500 font-bold cursor-pointer hover:text-orange-600 transition-colors duration-300">
+
+          <p className="mt-4 text-orange-500 font-bold cursor-pointer hover:text-orange-600 hover:underline transition-colors duration-300">
             Download our App to get Instant Nourishment
           </p>
           <div className="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0 mt-4 w-full">
