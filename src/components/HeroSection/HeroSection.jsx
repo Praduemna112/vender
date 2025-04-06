@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import videoFile from "../../assets/video.mp4";
 import heroBg from "../../assets/vender_image.png";
+import TypeWriter from "./TypeWriter";
 
 const HeroSection = () => {
   const [showVideo, setShowVideo] = useState(false);
@@ -17,8 +18,9 @@ const HeroSection = () => {
       {/* Main Text Content with added margin-top */}
       <div className="text-center text-white max-w-3xl z-10 mt-20">
         <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
-          Reimagining Vending. India's Foremost in Instant Commerce Via Smart
+          Reimagining Vending. India’s Foremost in Instant Commerce Via Smart
           Micro Retail Solutions!
+          <TypeWriter/>
         </h1>
         <p className="text-base md:text-lg mb-6">
           Our mission is to revolutionize the way people shop and interact with
