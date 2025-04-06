@@ -130,13 +130,13 @@ const Navbar = () => {
               +91 8308557539
             </a>
           </li>
-          <li className="flex items-center gap-2">
-            <IoMail className="text-blue-200" />
+          <li className="flex items-start gap-2 w-full">
+            <IoMail className="text-blue-500 text-xl mt-1" />
             <a
               href="mailto:deosthalepraduemna@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:underline"
+              className="hover:underline text-sm break-words"
             >
               deosthalepraduemna@gmail.com
             </a>
