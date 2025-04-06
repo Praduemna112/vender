@@ -131,6 +131,15 @@ const Navbar = () => {
           </li>
           <li>
             <Link
+              to="/models"
+              onClick={() => setNavOpen(false)}
+              className="hover:text-white transition duration-300"
+            >
+              Models
+            </Link>
+          </li>
+          <li>
+            <Link
               to="/contact"
               onClick={() => setNavOpen(false)}
               className="hover:text-white transition duration-300"
