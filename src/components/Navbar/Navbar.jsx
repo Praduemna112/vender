@@ -44,6 +44,7 @@ const Navbar = () => {
               { to: "/", label: "Home" },
               { to: "/about", label: "About Us" },
               { to: "/services", label: "Services" },
+              { to: "/models", label: "Models" },
               { to: "/contact", label: "Contact" },
             ].map((item) => (
               <li key={item.to} className="relative group">
@@ -68,32 +69,6 @@ const Navbar = () => {
                 </NavLink>
               </li>
             ))}
-
-            {/* WhatsApp */}
-            <li className="flex items-center">
-              <a
-                href="https://wa.me/918308557539"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center hover:text-white transition duration-300"
-              >
-                <FaWhatsapp className="mr-1 text-green-500" />
-                +91 8308557539
-              </a>
-            </li>
-
-            {/* Email */}
-            <li className="flex items-center">
-              <a
-                href="mailto:deosthalepraduemna@gmail.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center hover:text-white transition duration-300"
-              >
-                <IoMail className="mr-1 text-blue-600" />
-                deosthalepraduemna@gmail.com
-              </a>
-            </li>
           </ul>
 
           {/* Mobile Menu Icon */}
@@ -116,7 +91,7 @@ const Navbar = () => {
 
       {/* Mobile Menu Drawer */}
       <div
-        className={`fixed top-0 right-0 h-screen w-3/4 bg-white z-50 transform transition-transform duration-500 ${
+        className={`fixed top-0 right-0 h-screen w-3/5 bg-gradient-to-b from-orange-400 via-orange-300 to-orange-200 text-white z-50 transform transition-transform duration-500 ${
           navOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -126,26 +101,65 @@ const Navbar = () => {
             onClick={() => setNavOpen(false)}
           />
         </div>
-        <ul className="flex flex-col items-center space-y-4 py-8 text-lg font-medium text-gray-700">
+        <ul className="flex flex-col items-start px-6 space-y-6 py-8 text-lg font-medium">
           <li>
-            <Link to="/" onClick={() => setNavOpen(false)}>
+            <Link
+              to="/"
+              onClick={() => setNavOpen(false)}
+              className="hover:text-white transition duration-300"
+            >
               Home
             </Link>
           </li>
           <li>
-            <Link to="/about" onClick={() => setNavOpen(false)}>
+            <Link
+              to="/about"
+              onClick={() => setNavOpen(false)}
+              className="hover:text-white transition duration-300"
+            >
               About Us
             </Link>
           </li>
           <li>
-            <Link to="/services" onClick={() => setNavOpen(false)}>
+            <Link
+              to="/services"
+              onClick={() => setNavOpen(false)}
+              className="hover:text-white transition duration-300"
+            >
               Services
             </Link>
           </li>
           <li>
-            <Link to="/contact" onClick={() => setNavOpen(false)}>
+            <Link
+              to="/contact"
+              onClick={() => setNavOpen(false)}
+              className="hover:text-white transition duration-300"
+            >
               Contact
             </Link>
+          </li>
+          {/* WhatsApp and Email only in mobile view */}
+          <li className="flex items-center gap-2">
+            <FaWhatsapp className="text-green-200" />
+            <a
+              href="https://wa.me/918308557539"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:underline"
+            >
+              +91 8308557539
+            </a>
+          </li>
+          <li className="flex items-center gap-2">
+            <IoMail className="text-blue-200" />
+            <a
+              href="mailto:deosthalepraduemna@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:underline"
+            >
+              deosthalepraduemna@gmail.com
+            </a>
           </li>
         </ul>
       </div>
