@@ -16,18 +16,18 @@ const Contact = () => {
 
   return (
     <div className="w-full font-medium">
-      {/* Hero Section */}
+      {/* Hero Background */}
       <div className="relative w-full">
-        <div className="h-[20vh] md:h-[25vh]">
+        <div className="h-[30vh] sm:h-[35vh] md:h-[25vh]">
           <div className="absolute inset-0 bg-orange-700 opacity-80"></div>
         </div>
 
+        {/* Hero Content */}
         <div
-          className="relative z-10 flex flex-col items-center justify-center h-[25vh] md:h-[30vh] text-white text-center"
+          className="relative z-10 flex flex-col items-center justify-center h-[30vh] sm:h-[35vh] md:h-[30vh] text-white text-center"
           data-aos="fade-down"
         >
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 px-4 break-words max-w-screen-sm mx-auto">
-
             We’d love to hear from you…
           </h1>
           <div className="w-full h-16 sm:h-20 bg-gradient-to-r from-orange-400 to-transparent rounded-tl-full rounded-tr-full mt-4"></div>
