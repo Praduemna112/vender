@@ -73,12 +73,12 @@ const Model = () => {
       </section>
 
       {/* Buttons */}
-      <div className="flex justify-center gap-4 mt-8">
+      <div className="flex flex-wrap justify-center gap-4 mt-8 px-4">
         {images.map((_, idx) => (
           <button
             key={idx}
             onClick={() => setActiveIndex(idx)}
-            className={`px-4 py-2 rounded-full font-medium transition ${
+            className={`px-4 py-2 rounded-full font-medium transition text-sm sm:text-base ${
               activeIndex === idx
                 ? "bg-orange-600 text-white"
                 : "bg-gray-200 hover:bg-orange-400 hover:text-white"
@@ -102,7 +102,7 @@ const Model = () => {
           </div>
 
           {/* Info */}
-          <div className="w-full md:w-1/2  md:text-left space-y-4">
+          <div className="w-full md:w-1/2 md:text-left space-y-4">
             <h2 className="text-2xl font-semibold text-gray-800">
               {images[activeIndex].title}
             </h2>
@@ -115,7 +115,7 @@ const Model = () => {
 
             {/* Table */}
             <div className="overflow-x-auto mt-4">
-              <table className="min-w-full text-sm text-left text-gray-700 border border-gray-300 rounded-lg border-collapse">
+              <table className="w-full text-sm text-left text-gray-700 border border-gray-300 rounded-lg border-collapse min-w-[20rem] sm:min-w-full">
                 <thead className="bg-orange-500 text-white">
                   <tr>
                     <th className="px-4 py-2 font-semibold border border-gray-300">
@@ -143,6 +143,9 @@ const Model = () => {
           </div>
         </div>
       </div>
+
+      {/* Spacer before Footer */}
+      <div className="h-20 sm:h-32" />
     </>
   );
 };
