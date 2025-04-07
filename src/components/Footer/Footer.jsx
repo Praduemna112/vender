@@ -47,10 +47,28 @@ const Footer = () => {
               </Link>
             </li>
           </ul>
-          <div className="flex space-x-4 mt-4">
-            <FaFacebookF className="text-blue-600 cursor-pointer hover:text-orange-500 transition-transform duration-300 transform hover:scale-110" />
-            <FaInstagram className="text-pink-500 cursor-pointer hover:text-orange-500 transition-transform duration-300 transform hover:scale-110" />
-            <FaLinkedinIn className="text-blue-700 cursor-pointer hover:text-orange-500 transition-transform duration-300 transform hover:scale-110" />
+          <div className="flex space-x-5 mt-4">
+            <a
+              href="https://www.facebook.com/profile.php?id=61575210712307" // Replace with your actual Facebook page link
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaFacebookF className=" text-2xl text-blue-600 cursor-pointer hover:text-orange-500 transition-transform duration-300 transform hover:scale-110" />
+            </a>
+            <a
+              href="https://www.instagram.com/pcbtechnology/" // Replace with your actual Instagram profile link
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaInstagram className="text-2xl text-pink-500 cursor-pointer hover:text-orange-500 transition-transform duration-300 transform hover:scale-110" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/yourprofile" // Optional: LinkedIn profile link
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedinIn className="text-2xl text-blue-700 cursor-pointer hover:text-orange-500 transition-transform duration-300 transform hover:scale-110" />
+            </a>
           </div>
         </div>
 

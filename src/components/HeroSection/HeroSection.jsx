@@ -7,7 +7,6 @@ import TypeWriter from "./TypeWriter";
 const HeroSection = () => {
   const [showVideo, setShowVideo] = useState(false);
 
-  // Close video on scroll
   useEffect(() => {
     const handleScroll = () => {
       if (showVideo) {
@@ -19,7 +18,6 @@ const HeroSection = () => {
       window.addEventListener("scroll", handleScroll);
     }
 
-    // Cleanup
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -45,8 +43,9 @@ const HeroSection = () => {
           their environment through our innovative micro retail solutions.
         </p>
 
+        {/* Gradient Know More Button */}
         <Link to="/about">
-          <button className="bg-orange-500 text-white py-2 px-6 rounded-full hover:bg-orange-600 transition duration-300 text-sm sm:text-base md:text-lg">
+          <button className="bg-gradient-to-r from-pink-500 via-blue-400 to-yellow-400 text-white py-2 px-6 rounded-full hover:opacity-90 transition duration-300 text-sm sm:text-base md:text-lg shadow-lg">
             Know More
           </button>
         </Link>

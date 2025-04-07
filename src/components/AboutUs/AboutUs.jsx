@@ -17,9 +17,9 @@ const AboutUs = () => {
     <div className="w-full font-medium">
       {/* Hero Section */}
       <div className="relative">
-        {/* Background Image & Overlay */}
+        {/* Background Overlay */}
         <div className="h-[20vh] md:h-[25vh]">
-          <div className="absolute inset-0 bg-orange-700 opacity-80"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-pink-500 via-blue-400 to-yellow-400 opacity-90"></div>
         </div>
 
         {/* Hero Text */}
@@ -30,7 +30,7 @@ const AboutUs = () => {
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
             Smart Retail Solutions
           </h1>
-          <div className="w-full h-16 sm:h-20 bg-gradient-to-r from-orange-400 to-transparent rounded-tl-full rounded-tr-full mt-4"></div>
+          <div className="w-full h-16 sm:h-20 bg-gradient-to-r from-pink-500  to-blue-400 rounded-tl-full rounded-tr-full mt-4"></div>
         </div>
       </div>
 
@@ -41,7 +41,6 @@ const AboutUs = () => {
           className="flex flex-col md:flex-row items-center justify-between gap-8 mt-12"
           data-aos="fade-up"
         >
-          {/* Image 1 (Left Side) */}
           <img
             src={vendingMachine}
             alt="Vending Machine"
@@ -49,13 +48,12 @@ const AboutUs = () => {
             data-aos="fade-up"
           />
 
-          {/* Text Section */}
           <div
             className="w-full md:w-1/2 mt-8 md:mt-0"
             data-aos="fade-up"
             data-aos-delay="200"
           >
-            <h2 className="text-4xl md:text-7xl font-semibold text-orange-500 mb-6">
+            <h2 className="text-4xl md:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-orange-400 to-blue-400 mb-6">
               About Us
             </h2>
             <p className="text-base md:text-lg">
@@ -75,13 +73,12 @@ const AboutUs = () => {
           className="flex flex-col-reverse md:flex-row items-center gap-8 mt-20"
           data-aos="fade-up"
         >
-          {/* Text Section - Left Side */}
           <div
             className="w-full md:w-1/2"
             data-aos="fade-up"
             data-aos-delay="200"
           >
-            <h2 className="text-4xl md:text-6xl font-semibold text-orange-500 mb-4">
+            <h2 className="text-4xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-orange-400 to-blue-400 mb-4">
               Our Vision & Mission
             </h2>
             <ul className="list-disc pl-5 space-y-2 text-base md:text-lg">
@@ -98,14 +95,10 @@ const AboutUs = () => {
             </ul>
           </div>
 
-          {/* Image Section - Right Side */}
-          <div
-            className="w-full md:w-1/2"
-            data-aos="fade-up"
-          >
+          <div className="w-full md:w-1/2" data-aos="fade-up">
             <img
               src={settingVender}
-              alt="Vending Machine"
+              alt="Smart Retail Setup"
               className="w-full h-auto max-w-2xl mx-auto rounded-lg shadow-lg"
             />
           </div>

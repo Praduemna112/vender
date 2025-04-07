@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import logo from "../../assets/logo.jpeg";
+import CircuitLogo from "../CircuitLogo/CircuitLogo";
 import { NavLink, Link } from "react-router-dom";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { FaWhatsapp } from "react-icons/fa6";
@@ -28,13 +28,15 @@ const Navbar = () => {
   return (
     <div
       className={`w-full top-0 left-0 z-[100] transition-all duration-300 ${
-        isFixed ? "fixed bg-orange-400" : "absolute bg-transparent"
+        isFixed
+          ? "fixed bg-gradient-to-r from-pink-500 via-blue-400 to-yellow-400"
+          : "absolute bg-transparent"
       }`}
     >
-      <nav className="flex justify-between items-center px-4 py-4 max-w-7xl mx-auto">
-        <Link to="/" className="flex items-center">
-          <img src={logo} alt="Logo" className="w-12 h-12 mr-4 rounded-full" />
-          <h1 className="text-2xl font-bold text-white">Vender</h1>
+      <nav className="flex justify-between items-center px-4 py-2 max-w-7xl mx-auto">
+        <Link to="/" className="flex items-center space-x-2">
+          <CircuitLogo className="w-14 h-14" />
+          <h1 className="text-xl font-bold text-white">PCB Technology</h1>
         </Link>
 
         <div className="flex items-center space-x-8 ml-auto">
@@ -76,7 +78,7 @@ const Navbar = () => {
             onClick={() => setNavOpen(true)}
             className="md:hidden bg-orange-400 text-white text-3xl cursor-pointer p-2 rounded"
           >
-            <AiOutlineMenu />
+            <AiOutlineMenu className="text-2xl" />
           </div>
         </div>
       </nav>
