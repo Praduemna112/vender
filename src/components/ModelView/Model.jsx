@@ -114,14 +114,14 @@ const Model = () => {
             </h2>
 
             {/* Table */}
-            <div className="mt-4 w-full">
-              <table className="w-full table-fixed text-sm sm:text-base text-left text-gray-700 border border-gray-300 rounded-lg border-collapse">
+            <div className="overflow-x-auto mt-4">
+              <table className="w-full text-sm text-left text-gray-700 border border-gray-300 rounded-lg border-collapse min-w-[20rem] sm:min-w-full">
                 <thead className="bg-orange-500 text-white">
                   <tr>
-                    <th className="px-4 py-2 font-semibold border border-gray-300 w-1/2 break-words">
+                    <th className="px-4 py-2 font-semibold border border-gray-300">
                       Specification
                     </th>
-                    <th className="px-4 py-2 font-semibold border border-gray-300 w-1/2 break-words">
+                    <th className="px-4 py-2 font-semibold border border-gray-300">
                       Details
                     </th>
                   </tr>
@@ -129,10 +129,10 @@ const Model = () => {
                 <tbody>
                   {images[activeIndex].specs.map(([label, value], idx) => (
                     <tr key={idx}>
-                      <td className="px-4 py-2 bg-orange-100 font-medium border border-gray-300 break-words">
+                      <td className="px-4 py-2 bg-orange-100 font-medium border border-gray-300">
                         {label}
                       </td>
-                      <td className="px-4 py-2 border border-gray-300 break-words">
+                      <td className="px-4 py-2 border border-gray-300">
                         {value}
                       </td>
                     </tr>
