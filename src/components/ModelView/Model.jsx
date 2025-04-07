@@ -115,13 +115,13 @@ const Model = () => {
 
             {/* Table */}
             <div className="mt-4 w-full">
-              <table className="w-full text-sm text-left text-gray-700 border border-gray-300 rounded-lg border-collapse table-fixed">
+              <table className="w-full table-fixed text-sm sm:text-base text-left text-gray-700 border border-gray-300 rounded-lg border-collapse">
                 <thead className="bg-orange-500 text-white">
                   <tr>
-                    <th className="px-4 py-2 font-semibold border border-gray-300">
+                    <th className="px-4 py-2 font-semibold border border-gray-300 w-1/2 break-words">
                       Specification
                     </th>
-                    <th className="px-4 py-2 font-semibold border border-gray-300">
+                    <th className="px-4 py-2 font-semibold border border-gray-300 w-1/2 break-words">
                       Details
                     </th>
                   </tr>
