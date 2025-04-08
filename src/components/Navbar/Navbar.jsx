@@ -76,7 +76,7 @@ const Navbar = () => {
           {/* Mobile Menu Icon */}
           <div
             onClick={() => setNavOpen(true)}
-            className="md:hidden bg-orange-400 text-white text-3xl cursor-pointer p-2 rounded"
+            className="md:hidden bg-gradient-to-r from-pink-500 via-blue-400 to-yellow-400 text-white text-3xl cursor-pointer p-2 rounded"
           >
             <AiOutlineMenu className="text-2xl" />
           </div>
@@ -93,7 +93,7 @@ const Navbar = () => {
 
       {/* Mobile Menu Drawer */}
       <div
-        className={`fixed top-0 right-0 h-screen w-3/5 bg-gradient-to-b from-orange-400 via-orange-300 to-orange-200 text-white z-[100] transform transition-transform duration-500 ${
+        className={`fixed top-0 right-0 h-screen w-3/5 bg-gradient-to-b from-pink-500 via-blue-400 to-yellow-400 text-white z-[100] transform transition-transform duration-500 ${
           navOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -133,7 +133,7 @@ const Navbar = () => {
             </a>
           </li>
           <li className="flex items-start gap-2 w-full">
-            <IoMail className="text-blue-500 text-xl mt-1" />
+            <IoMail className="text-blue-100 text-xl mt-1" />
             <a
               href="mailto:deosthalepraduemna@gmail.com"
               target="_blank"
