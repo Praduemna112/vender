@@ -1,94 +1,112 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import {
-  FaMapMarkerAlt,
-  FaFacebookF,
-  FaInstagram,
-  FaLinkedinIn,
-} from "react-icons/fa";
+import instagramIcon from "../../assets/Instagram_icon.png";
+import facebookIcon from "../../assets/Facebook_icon.png";
+import linkedinIcon from "../../assets/Linkedin_icon.png";
 
-// ✅ Ensure these files exist in src/assets/
+import { FaMapMarkerAlt } from "react-icons/fa";
+
 import googleStore from "../../assets/googleStore.jpg";
 import appStore from "../../assets/appStore.jpg";
+import CircuitLogo from "../CircuitLogo/CircuitLogo";
+
+const hoverGradient =
+  "transition-colors duration-300 hover:bg-gradient-to-tr hover:from-pink-600 hover:via-purple-500 hover:to-yellow-400 hover:text-transparent hover:bg-clip-text";
 
 const Footer = () => {
   return (
     <footer className="bg-gray-100 py-8">
       <div className="container mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 px-4 md:px-20">
-        {/* Company Section */}
+        {/* Logo + Social Section */}
         <div>
-          <h3 className="font-bold mb-4">Company</h3>
-          <ul className="space-y-2">
-            <li>
-              <Link
-                to="/about"
-                className="hover:text-orange-500 hover:underline transition-colors duration-300"
-              >
-                About Us
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/contact"
-                className="hover:text-orange-500 hover:underline transition-colors duration-300"
-              >
-                Contact
-              </Link>
-            </li>
-            <li className="cursor-pointer hover:text-orange-500 hover:underline transition-colors duration-300">
-              Careers
-            </li>
-            <li>
-              <Link
-                to="/Enquire"
-                className="hover:text-orange-500 hover:underline transition-colors duration-300"
-              >
-                Enquire Now
-              </Link>
-            </li>
-          </ul>
+          <div className="flex items-center space-x-3 mb-3">
+            <CircuitLogo className="w-20 h-20" />
+            <h2 className="text-2xl font-bold bg-gradient-to-tr from-pink-600 via-purple-500 to-yellow-400 text-transparent bg-clip-text">
+              PCB Technology
+            </h2>
+          </div>
+          <h2 className={`text-lg text-gray-700 mb-4 ${hoverGradient}`}>
+            India’s best vending machine manufacturer and supplier.
+          </h2>
           <div className="flex space-x-5 mt-4">
             <a
-              href="https://www.facebook.com/profile.php?id=61575210712307" // Replace with your actual Facebook page link
+              href="https://www.facebook.com/profile.php?id=61575210712307"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaFacebookF className=" text-2xl text-blue-600 cursor-pointer hover:text-orange-500 transition-transform duration-300 transform hover:scale-110" />
+              <div className="p-[2px] rounded-full transition-all duration-300 hover:bg-gradient-to-tr hover:from-pink-600 hover:via-purple-500 hover:to-yellow-400">
+                <img
+                  src={facebookIcon}
+                  alt="Facebook"
+                  className="w-8 h-8 rounded-full bg-white object-contain p-1"
+                />
+              </div>
             </a>
             <a
-              href="https://www.instagram.com/pcbtechnology/" // Replace with your actual Instagram profile link
+              href="https://www.instagram.com/pcbtechnology/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaInstagram className="text-2xl text-pink-500 cursor-pointer hover:text-orange-500 transition-transform duration-300 transform hover:scale-110" />
+              <div className="p-[2px] rounded-full transition-all duration-300 hover:bg-gradient-to-tr hover:from-pink-600 hover:via-purple-500 hover:to-yellow-400">
+                <img
+                  src={instagramIcon}
+                  alt="Instagram"
+                  className="w-8 h-8 rounded-full bg-white object-contain p-1"
+                />
+              </div>
             </a>
             <a
-              href="https://www.linkedin.com/in/yourprofile" // Optional: LinkedIn profile link
+              href="https://www.linkedin.com/in/yourprofile"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaLinkedinIn className="text-2xl text-blue-700 cursor-pointer hover:text-orange-500 transition-transform duration-300 transform hover:scale-110" />
+              <div className="p-[2px] rounded-full transition-all duration-300 hover:bg-gradient-to-tr hover:from-pink-600 hover:via-purple-500 hover:to-yellow-400">
+                <img
+                  src={linkedinIcon}
+                  alt="LinkedIn"
+                  className="w-8 h-8 rounded-full bg-white object-contain p-1"
+                />
+              </div>
             </a>
           </div>
         </div>
 
-        {/* Legal Section */}
+        {/* Company + Legal */}
         <div>
-          <h3 className="font-bold mb-4">Legal</h3>
-          <ul className="space-y-2">
-            <li className="cursor-pointer hover:text-orange-500 hover:underline transition-colors duration-300">
-              Privacy Policy
-            </li>
-            <li className="cursor-pointer hover:text-orange-500 hover:underline transition-colors duration-300">
-              Terms & Conditions
-            </li>
-            <li className="cursor-pointer hover:text-orange-500 hover:underline transition-colors duration-300">
-              Return, Refund & Cancellation Policy
-            </li>
-          </ul>
+          <div className="mb-6">
+            <h3 className="font-bold mb-4">Company</h3>
+            <ul className="space-y-2">
+              <li>
+                <Link to="/about" className={hoverGradient}>
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact" className={hoverGradient}>
+                  Contact
+                </Link>
+              </li>
+              <li className={hoverGradient}>Careers</li>
+              <li>
+                <Link to="/Enquire" className={hoverGradient}>
+                  Enquire Now
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="font-bold mb-4">Legal</h3>
+            <ul className="space-y-2">
+              <li className={hoverGradient}>Privacy Policy</li>
+              <li className={hoverGradient}>Terms & Conditions</li>
+              <li className={hoverGradient}>
+                Return, Refund & Cancellation Policy
+              </li>
+            </ul>
+          </div>
         </div>
 
-        {/* Our Offerings Section */}
+        {/* Our Offerings */}
         <div>
           <h3 className="font-bold mb-4">Our Offerings</h3>
           <ul className="space-y-2">
@@ -102,35 +120,31 @@ const Footer = () => {
               "Vending Machine On Rent",
               "Snack Vending Machine On Rent",
             ].map((item, index) => (
-              <li
-                key={index}
-                className="cursor-pointer hover:text-orange-500 hover:underline transition-colors duration-300"
-              >
+              <li key={index} className={hoverGradient}>
                 {item}
               </li>
             ))}
           </ul>
         </div>
 
-        {/* Contact Section */}
+        {/* Contact */}
         <div>
           <h3 className="font-bold mb-4">Contact</h3>
-          <p className="hover:text-orange-500 hover:underline transition-colors duration-300">
+          <p className={hoverGradient}>
             SUNCITY WING B/ 2 Apartment building in Solapur, Maharashtra
           </p>
-          <p className="mt-2 cursor-pointer hover:text-orange-500 hover:underline transition-colors duration-300">
+          <p className="mt-2">
             <a
               href="https://maps.app.goo.gl/JjZmPE93rFyCaDnj6"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center hover:text-orange-500"
+              className={`flex items-center ${hoverGradient}`}
             >
               Get Directions
               <FaMapMarkerAlt className="ml-2 text-red-600" />
             </a>
           </p>
-
-          <p className="mt-4 text-orange-500 font-bold cursor-pointer hover:text-orange-600 hover:underline transition-colors duration-300">
+          <p className={`mt-4 font-bold cursor-pointer ${hoverGradient}`}>
             Download our App to get Instant Nourishment
           </p>
           <div className="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0 mt-4 w-full">
@@ -161,7 +175,7 @@ const Footer = () => {
       </div>
 
       <div className="border-t border-gray-300 mt-8 pt-4 text-center text-gray-600">
-        © 2025 Vender. All rights reserved.
+        © 2025 PCB Technology. All rights reserved.
       </div>
     </footer>
   );

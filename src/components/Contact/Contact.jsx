@@ -60,24 +60,24 @@ const Contact = () => {
               <span>Customer Care Number:</span>
               <FaWhatsapp className="text-green-500" />
               <a
-                href="https://wa.me/918308557539"
+                href="https://wa.me/919225812922"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-black hover:text-orange-600 underline"
               >
-                +91 8308557539
+                +91 9225812922
               </a>
             </li>
             <li className="flex items-center gap-2">
               <span>Email:</span>
               <IoMail className="text-red-500" />
               <a
-                href="mailto:deosthalepraduemna@gmail.com"
+                href="mailto:extrauserdata@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-black hover:text-orange-600 underline"
               >
-                deosthalepraduemna@gmail.com
+                extrauserdata@gmail.com
               </a>
             </li>
           </ul>

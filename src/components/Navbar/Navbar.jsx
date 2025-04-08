@@ -124,12 +124,12 @@ const Navbar = () => {
           <li className="flex items-center gap-2">
             <FaWhatsapp className="text-green-200" />
             <a
-              href="https://wa.me/918308557539"
+              href="https://wa.me/919225812922"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:underline"
             >
-              +91 8308557539
+              +91 9225812922
             </a>
           </li>
           <li className="flex items-start gap-2 w-full">
