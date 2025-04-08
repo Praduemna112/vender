@@ -45,7 +45,7 @@ const Navbar = () => {
             {[
               { to: "/", label: "Home" },
               { to: "/about", label: "About Us" },
-              { to: "/services", label: "Services" },
+              { to: "/service", label: "Service" },
               { to: "/models", label: "Models" },
               { to: "/contact", label: "Contact" },
             ].map((item) => (
@@ -107,7 +107,7 @@ const Navbar = () => {
           {[
             { to: "/", label: "Home" },
             { to: "/about", label: "About Us" },
-            { to: "/services", label: "Services" },
+            { to: "/service", label: "Service" },
             { to: "/models", label: "Models" },
             { to: "/contact", label: "Contact" },
           ].map((item) => (

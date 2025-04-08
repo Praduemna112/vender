@@ -14,6 +14,7 @@ import EnquirePage from "./components/EnquirePage/EnquirePage";
 import Footer from "./components/Footer/Footer";
 
 import ScrollToTop from "./components/ScrollToTop";
+import Service from "./components/Services/Service";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -27,6 +28,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutUs />} />
+          <Route path="/service" element={<Service />} />
           <Route path="/features" element={<Feacture />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/models" element={<Model />} />
