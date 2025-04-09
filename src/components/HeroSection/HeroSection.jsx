@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import videoFile from "../../assets/video.mp4";
 import heroBg from "../../assets/vender_image.png";
 import TypeWriter from "./TypeWriter";
+import PlayButton from "./PlayButton"; // ✅ import your PlayButton component
 
 const HeroSection = () => {
   const [showVideo, setShowVideo] = useState(false);
@@ -50,18 +51,10 @@ const HeroSection = () => {
           </button>
         </Link>
 
-        {/* Play Video Icon */}
+        {/* ✅ Custom Play Button Component */}
         {!showVideo && (
           <div className="mt-6 flex justify-center">
-            <svg
-              onClick={() => setShowVideo(true)}
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 64 64"
-              className="w-16 h-16 sm:w-20 sm:h-20 cursor-pointer transition-transform duration-300 hover:scale-110"
-            >
-              <circle cx="32" cy="32" r="32" fill="rgba(0, 0, 0, 0.4)" />
-              <polygon points="26,20 26,44 46,32" fill="#fff" />
-            </svg>
+            <PlayButton size={80} onClick={() => setShowVideo(true)} />
           </div>
         )}
       </div>
