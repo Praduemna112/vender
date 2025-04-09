@@ -3,6 +3,12 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import vendingMachine from "../../assets/machine1.jpeg";
 import settingVender from "../../assets/settingVender.png";
+import gearIcon from "../../assets/Gear.png"; //
+import foodIcon from "../../assets/Food_icon.jpg"
+import thumbIcon from "../../assets/Thumb.png";
+import flexibleIcon from "../../assets/Flexible_icon.png";
+import fulltimeIcon from "../../assets/Fulltime_icon.png";
+import lableIcon from "../../assets/Lable.png";
 
 const Feature = () => {
   useEffect(() => {
@@ -14,15 +20,15 @@ const Feature = () => {
       {/* Feature Icons Section */}
       <div className="bg-gray-100 py-12 px-6 md:px-20 rounded-lg relative">
         <div
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-center mt-12"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-center mt-10"
           data-aos="fade-up"
         >
           {[
-            ["⚙️", "Fully Automated and Contactless Solutions"],
-            ["↔️", "Bespoke, Flexible and Scalable"],
-            ["⏳", "24×7 Availability: Relevance with Convenience"],
+            [<img src={gearIcon} alt="gearIcon" className="w-28 h-28 mx-auto" />, "Fully Automated and Contactless Solutions"],
+            [<img src={flexibleIcon} alt="flexibleIcon" className="w-28 h-28 mx-auto"/>, "Bespoke, Flexible and Scalable"],
+            [<img src={fulltimeIcon} alt="fulltimeIcon" className="w-28 h-28 mx-auto"/>, "24×7 Availability: Relevance with Convenience"],
             [
-              "🏷️",
+              <img src={lableIcon} alt="lableIcon" className="w-28 h-28 mx-auto"/>,
               "Branded, curated, and nutritious range of meals, snacks and beverages",
             ],
           ].map(([icon, title], index) => (
@@ -85,7 +91,7 @@ const Feature = () => {
 
         {/* Section 2 - Beverages */}
         <div
-          className="flex flex-col sm:flex-row items-center gap-2"
+          className="flex flex-col sm:flex-row items-center gap-8"
           data-aos="fade-up"
         >
           <div className="w-full sm:w-1/2 sm:ml-28 pr-4 sm:pr-8">
@@ -114,7 +120,7 @@ const Feature = () => {
 
         {/* Section 3 - Health and Personal Care */}
         <div
-          className="flex flex-col sm:flex-row items-center justify-between gap-8"
+          className="flex flex-col-reverse sm:flex-row items-center justify-between gap-8"
           data-aos="fade-up"
         >
           <img
@@ -143,7 +149,7 @@ const Feature = () => {
 
         {/* Section 4 - Pantry Supply Services */}
         <div
-          className="flex flex-col sm:flex-row items-center gap-2"
+          className="flex flex-col sm:flex-row items-center gap-8"
           data-aos="fade-up"
         >
           <div className="w-full sm:w-1/2 sm:ml-28 pr-4 sm:pr-8">
@@ -177,26 +183,30 @@ const Feature = () => {
         <div className="mt-28"></div>
 
         {/* Why Choose Us Section */}
-        <div className="bg-white text-gray-900 py-16 px-6 sm:px-20" data-aos="fade-up">
-          <h2 className="text-center text-4xl font-bold mb-10 bg-gradient-to-r from-pink-500 via-blue-400 to-yellow-400 bg-clip-text text-transparent">
-            Why choose Vender?
+        <div
+          className="bg-white text-gray-900 py-18 px-6 sm:px-22"
+          data-aos="fade-up"
+        >
+          <h2 className="text-center text-3xl font-bold mb-14 bg-gradient-to-r from-pink-500 via-blue-400 to-yellow-400 bg-clip-text text-transparent">
+            Why choose Vending Machine?
           </h2>
-          <div className="flex flex-col sm:flex-row items-center gap-14">
-            <div className="w-full min-h-80 sm:w-1/3 flex justify-end">
+          <div className="flex flex-col sm:flex-row items-center gap-16">
+            <div className="w-full min-h-80 sm:w-1/3 flex justify-center sm:justify-end ">
               <img
                 src={vendingMachine}
                 alt="Vending Machine"
-                className="w-full max-w-sm rounded-lg shadow-lg"
+                className="w-full max-w-sm rounded-lg  object-contain"
               />
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 w-full sm:w-2/3 bg-white bg-opacity-90 shadow-md p-14 rounded-lg text-gray-900">
               {[
-                ["🍽️", "Nutritious Branded F&B merchandise"],
-                ["⚙️", "Fully Automated"],
-                ["👍", "Hassle Free"],
-                ["↔️", "Convenient & Quick"],
-                ["⏳", "24/7 Availability"],
+                [<img src={foodIcon} alt="foodIcon" className="w-28 h-28 mx-auto" />, "Nutritious Branded F&B merchandise"],
+                [<img src={gearIcon} alt="gearIcon" className="w-28 h-28 mx-auto"/>, "Fully Automated"],
+                [<img src={thumbIcon} alt="thumbIcon" className="w-28 h-28 mx-auto"/>, "Hassle Free"],
+                
+                [<img src={fulltimeIcon} alt="fulltimeIcon" className="w-28 h-28 mx-auto"/>, "24/7 Availability"],
                 ["🏅", "Premium Quality"],
+                [<img src={flexibleIcon} alt="flexibleIcon" className="w-28 h-28 mx-auto"/>, "Convenient & Quick"],
                 ["📦", "Inventory Tracking"],
                 ["🔒", "Secure Payment"],
               ].map(([icon, text], i) => (

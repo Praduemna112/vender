@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import instagramIcon from "../../assets/Instagram_icon.png";
 import facebookIcon from "../../assets/Facebook_icon.png";
 import linkedinIcon from "../../assets/Linkedin_icon.png";
+import youtubeIcon from "../../assets/Youtube_icon.png";
 
 import { FaMapMarkerAlt } from "react-icons/fa";
 
@@ -38,7 +39,7 @@ const Footer = () => {
                 <img
                   src={facebookIcon}
                   alt="Facebook"
-                  className="w-8 h-8 rounded-full bg-white object-contain p-1"
+                  className="w-8 h-8 rounded-full bg-blue-200 object-contain p-1"
                 />
               </div>
             </a>
@@ -51,7 +52,7 @@ const Footer = () => {
                 <img
                   src={instagramIcon}
                   alt="Instagram"
-                  className="w-8 h-8 rounded-full bg-white object-contain p-1"
+                  className="w-8 h-8 rounded-full bg-red-200 object-contain p-1"
                 />
               </div>
             </a>
@@ -64,7 +65,20 @@ const Footer = () => {
                 <img
                   src={linkedinIcon}
                   alt="LinkedIn"
-                  className="w-8 h-8 rounded-full bg-white object-contain p-1"
+                  className="w-8 h-8 rounded-full bg-blue-200 object-contain p-1"
+                />
+              </div>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/yourprofile"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="p-[2px] rounded-full transition-all duration-300 hover:bg-gradient-to-tr hover:from-pink-600 hover:via-purple-500 hover:to-yellow-400">
+                <img
+                  src={youtubeIcon}
+                  alt="LinkedIn"
+                  className="w-8 h-8 rounded-full bg-red-200 object-contain p-1"
                 />
               </div>
             </a>
