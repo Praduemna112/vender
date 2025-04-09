@@ -30,18 +30,20 @@ const Footer = () => {
             India’s best vending machine manufacturer and supplier.
           </p>
           <div className="flex space-x-4 mt-2">
-            {[facebookIcon, instagramIcon, linkedinIcon, youtubeIcon].map((icon, i) => (
-              <div
-                key={i}
-                className="p-[2px] rounded-full transition-all duration-300 hover:bg-gradient-to-tr hover:from-pink-600 hover:via-purple-500 hover:to-yellow-400"
-              >
-                <img
-                  src={icon}
-                  alt="social"
-                  className="w-8 h-8 rounded-full bg-gray-200 object-contain p-1"
-                />
-              </div>
-            ))}
+            {[facebookIcon, instagramIcon, linkedinIcon, youtubeIcon].map(
+              (icon, i) => (
+                <div
+                  key={i}
+                  className="p-[2px] rounded-full transition-all duration-300 hover:bg-gradient-to-tr hover:from-pink-600 hover:via-purple-500 hover:to-yellow-400"
+                >
+                  <img
+                    src={icon}
+                    alt="social"
+                    className="w-8 h-8 rounded-full bg-gray-200 object-contain p-1"
+                  />
+                </div>
+              )
+            )}
           </div>
         </div>
 
@@ -52,10 +54,22 @@ const Footer = () => {
             <div className="mb-6">
               <h3 className="font-bold mb-3 text-lg">Company</h3>
               <ul className="space-y-2 text-sm">
-                <li><Link to="/about" className={hoverGradient}>About Us</Link></li>
-                <li><Link to="/contact" className={hoverGradient}>Contact</Link></li>
+                <li>
+                  <Link to="/about" className={hoverGradient}>
+                    About Us
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/contact" className={hoverGradient}>
+                    Contact
+                  </Link>
+                </li>
                 <li className={hoverGradient}>Careers</li>
-                <li><Link to="/Enquire" className={hoverGradient}>Enquire Now</Link></li>
+                <li>
+                  <Link to="/Enquire" className={hoverGradient}>
+                    Enquire Now
+                  </Link>
+                </li>
               </ul>
             </div>
             <div>
@@ -63,7 +77,9 @@ const Footer = () => {
               <ul className="space-y-2 text-sm">
                 <li className={hoverGradient}>Privacy Policy</li>
                 <li className={hoverGradient}>Terms & Conditions</li>
-                <li className={hoverGradient}>Return, Refund & Cancellation Policy</li>
+                <li className={hoverGradient}>
+                  Return, Refund & Cancellation Policy
+                </li>
               </ul>
             </div>
           </div>
@@ -82,7 +98,9 @@ const Footer = () => {
                 "Vending Machine On Rent",
                 "Snack Vending Machine On Rent",
               ].map((item, index) => (
-                <li key={index} className={hoverGradient}>{item}</li>
+                <li key={index} className={hoverGradient}>
+                  {item}
+                </li>
               ))}
             </ul>
           </div>
@@ -107,7 +125,7 @@ const Footer = () => {
             <p className={`mt-4 font-semibold text-sm ${hoverGradient}`}>
               Download our App to get Instant Nourishment
             </p>
-            <div className="flex flex-col sm:flex-row sm:space-x-4 mt-4 space-y-4 sm:space-y-0">
+            <div className="flex flex-row space-x-4 mt-4">
               <a
                 href="https://play.google.com/store/apps/details?id=com.yourapp.package"
                 target="_blank"
