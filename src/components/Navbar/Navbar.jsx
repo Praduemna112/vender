@@ -135,12 +135,12 @@ const Navbar = () => {
           <li className="flex items-start gap-2 w-full">
             <IoMail className="text-blue-100 text-xl mt-1" />
             <a
-              href="mailto:deosthalepraduemna@gmail.com"
+              href="mailto:extrauserdata@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:underline text-sm break-words"
             >
-              deosthalepraduemna@gmail.com
+              extrauserdata@gmail.com
             </a>
           </li>
         </ul>
