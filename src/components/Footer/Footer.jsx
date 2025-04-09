@@ -19,9 +19,9 @@ const Footer = () => {
       <div className="container mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 px-4 md:px-20">
         {/* Logo + Social Section */}
         <div>
-          <div className="flex items-center space-x-3 mb-3">
-            <CircuitLogo className="w-20 h-20" />
-            <h2 className="text-2xl font-bold bg-gradient-to-tr from-pink-600 via-purple-500 to-yellow-400 text-transparent bg-clip-text">
+          <div className="flex flex-col items-start md:flex-row md:items-center md:space-x-3 mb-3">
+            <CircuitLogo className="w-16 h-16 mb-2 md:mb-0" />
+            <h2 className="text-xl md:text-2xl font-bold bg-gradient-to-tr from-pink-600 via-purple-500 to-yellow-400 text-transparent bg-clip-text">
               PCB Technology
             </h2>
           </div>
