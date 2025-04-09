@@ -30,20 +30,54 @@ const Footer = () => {
             India’s best vending machine manufacturer and supplier.
           </p>
           <div className="flex space-x-4 mt-2">
-            {[facebookIcon, instagramIcon, linkedinIcon, youtubeIcon].map(
-              (icon, i) => (
-                <div
-                  key={i}
-                  className="p-[2px] rounded-full transition-all duration-300 hover:bg-gradient-to-tr hover:from-pink-600 hover:via-purple-500 hover:to-yellow-400"
-                >
-                  <img
-                    src={icon}
-                    alt="social"
-                    className="w-8 h-8 rounded-full bg-gray-200 object-contain p-1"
-                  />
-                </div>
-              )
-            )}
+            <a
+              href="https://www.facebook.com/profile.php?id=61575210712307"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-[2px] rounded-full transition-all duration-300 hover:bg-gradient-to-tr hover:from-pink-600 hover:via-purple-500 hover:to-yellow-400"
+            >
+              <img
+                src={facebookIcon}
+                alt="Facebook"
+                className="w-8 h-8 rounded-full bg-gray-200 object-contain p-1"
+              />
+            </a>
+            <a
+              href="https://www.instagram.com/pcb_technology/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-[2px] rounded-full transition-all duration-300 hover:bg-gradient-to-tr hover:from-pink-600 hover:via-purple-500 hover:to-yellow-400"
+            >
+              <img
+                src={instagramIcon}
+                alt="Instagram"
+                className="w-8 h-8 rounded-full bg-gray-200 object-contain p-1"
+              />
+            </a>
+            <a
+              href="https://www.linkedin.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-[2px] rounded-full transition-all duration-300 hover:bg-gradient-to-tr hover:from-pink-600 hover:via-purple-500 hover:to-yellow-400"
+            >
+              <img
+                src={linkedinIcon}
+                alt="LinkedIn"
+                className="w-8 h-8 rounded-full bg-gray-200 object-contain p-1"
+              />
+            </a>
+            <a
+              href="https://www.youtube.com/@YourChannel"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-[2px] rounded-full transition-all duration-300 hover:bg-gradient-to-tr hover:from-pink-600 hover:via-purple-500 hover:to-yellow-400"
+            >
+              <img
+                src={youtubeIcon}
+                alt="YouTube"
+                className="w-8 h-8 rounded-full bg-gray-200 object-contain p-1"
+              />
+            </a>
           </div>
         </div>
 
