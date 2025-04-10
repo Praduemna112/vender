@@ -118,7 +118,7 @@ const Navbar = () => {
             </li>
           ))}
 
-          <li className="flex justify-start text-xl items-center gap-2 pt-4">
+          <li className="flex justify-start text-lg items-center gap-2 pt-4">
             <FaWhatsapp className="text-green-200" />
             <a
               href="https://wa.me/919225812922"
