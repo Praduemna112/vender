@@ -94,7 +94,7 @@ const Feature = () => {
             className="w-full h-auto max-w-2xl mx-auto rounded-lg shadow-lg"
           />
           <div className="w-full sm:w-1/2 mt-8 sm:mt-0">
-            <h2 className="text-2xl sm:text-3xl font-semibold mb-6 bg-gradient-to-r  text-blue-400  bg-clip-text text-transparent">
+            <h2 className="text-2xl sm:text-3xl font-semibold mb-6 bg-gradient-to-r  text-blue-500  bg-clip-text text-transparent">
               Curated Range of Meals and Snacks
             </h2>
             <ul className="list-disc pl-5 space-y-2 text-base sm:text-lg">
@@ -159,7 +159,7 @@ const Feature = () => {
             className="w-full h-auto max-w-2xl mx-auto rounded-lg shadow-lg"
           />
           <div className="w-full sm:w-1/2">
-            <h2 className="text-2xl sm:text-3xl font-semibold mb-6 bg-gradient-to-r  text-blue-400 bg-clip-text text-transparent">
+            <h2 className="text-2xl sm:text-3xl font-semibold mb-6 bg-gradient-to-r  text-blue-500 bg-clip-text text-transparent">
               Health and Personal Care
             </h2>
             <ul className="space-y-2 text-base sm:text-lg">
@@ -217,9 +217,9 @@ const Feature = () => {
           className="bg-white text-gray-900 py-16 px-4 sm:px-10 md:px-20"
           data-aos="fade-up"
         >
-          <h2 className="text-center text-2xl sm:text-3xl md:text-4xl font-bold mb-14 bg-gradient-to-r text-pink-400 bg-clip-text text-transparent">
-            Why choose Vending Machine?
-          </h2>
+         <h2 className="text-center text-2xl sm:text-3xl md:text-4xl font-bold mb-14 bg-gradient-to-r text-pink-500  bg-clip-text ">
+  Why choose Vending Machine?
+</h2>
           <div className="flex flex-col sm:flex-row items-center gap-16">
             <div className="w-full min-h-80 sm:w-1/3 flex justify-center sm:justify-end">
               <img
@@ -296,7 +296,7 @@ const Feature = () => {
           data-aos="fade-up"
         >
           <div className="text-center mb-10">
-            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-snug bg-gradient-to-r text-pink-400 bg-clip-text text-transparent">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-snug bg-gradient-to-r text-pink-500 bg-clip-text ">
               Multi - Sector Approach
             </h1>
           </div>
