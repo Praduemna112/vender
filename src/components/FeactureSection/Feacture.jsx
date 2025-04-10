@@ -9,6 +9,9 @@ import thumbIcon from "../../assets/Thumb.png";
 import flexibleIcon from "../../assets/Flexible_icon.png";
 import fulltimeIcon from "../../assets/Fulltime_icon.png";
 import lableIcon from "../../assets/Lable.png";
+import medalIcon from "../../assets/Medal.png";
+import packingIcon from "../../assets/Packing.png";
+import lockIcon from "../../assets/lock.png";
 
 const Feature = () => {
   useEffect(() => {
@@ -18,7 +21,7 @@ const Feature = () => {
   return (
     <>
       {/* Feature Icons Section */}
-      <div className="bg-gray-100 py-12 px-4 sm:px-10 md:px-20 rounded-lg relative">
+      <div className="bg-gray-200 w-screen py-10 px-6 sm:px-10 md:px-20 rounded-lg relative">
         <div
           className="grid grid-cols-1 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 gap-x-6 text-center mt-10"
           data-aos="fade-up"
@@ -74,7 +77,7 @@ const Feature = () => {
       <div className="bg-white text-gray-900 px-4 sm:px-10 md:px-20 py-12">
         {/* Hero Text */}
         <div className="text-center mb-10" data-aos="fade-up">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-snug bg-gradient-to-r from-pink-500 via-blue-400 to-yellow-400 bg-clip-text text-transparent inline-block p-4 rounded-lg shadow-md">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-snug bg-gradient-to-r text-pink-500 p-4 rounded-lg ">
             India's Leading Vending Machine Supplier Making Everyday Convenience
             Available - Easier, Smarter, Safer, With Micro Retail Solutions!
           </h1>
@@ -91,7 +94,7 @@ const Feature = () => {
             className="w-full h-auto max-w-2xl mx-auto rounded-lg shadow-lg"
           />
           <div className="w-full sm:w-1/2 mt-8 sm:mt-0">
-            <h2 className="text-2xl sm:text-3xl font-semibold mb-6 bg-gradient-to-r from-pink-500 via-blue-400 to-yellow-400 bg-clip-text text-transparent">
+            <h2 className="text-2xl sm:text-3xl font-semibold mb-6 bg-gradient-to-r  text-blue-400  bg-clip-text text-transparent">
               Curated Range of Meals and Snacks
             </h2>
             <ul className="list-disc pl-5 space-y-2 text-base sm:text-lg">
@@ -122,7 +125,7 @@ const Feature = () => {
           data-aos="fade-up"
         >
           <div className="w-full sm:w-1/2 sm:ml-10 pr-4 sm:pr-8">
-            <h2 className="text-2xl sm:text-3xl font-semibold mb-3 bg-gradient-to-r from-pink-500 via-blue-400 to-yellow-400 bg-clip-text text-transparent">
+            <h2 className="text-2xl sm:text-3xl font-semibold mb-3 bg-gradient-to-r  text-yellow-400 bg-clip-text text-transparent">
               Refreshing Range of Beverages
             </h2>
             <ul className="list-disc pl-5 space-y-2 text-base sm:text-lg">
@@ -156,7 +159,7 @@ const Feature = () => {
             className="w-full h-auto max-w-2xl mx-auto rounded-lg shadow-lg"
           />
           <div className="w-full sm:w-1/2">
-            <h2 className="text-2xl sm:text-3xl font-semibold mb-6 bg-gradient-to-r from-pink-500 via-blue-400 to-yellow-400 bg-clip-text text-transparent">
+            <h2 className="text-2xl sm:text-3xl font-semibold mb-6 bg-gradient-to-r  text-blue-400 bg-clip-text text-transparent">
               Health and Personal Care
             </h2>
             <ul className="space-y-2 text-base sm:text-lg">
@@ -180,7 +183,7 @@ const Feature = () => {
           data-aos="fade-up"
         >
           <div className="w-full sm:w-1/2 sm:ml-10 pr-4 sm:pr-8">
-            <h2 className="text-2xl sm:text-3xl font-semibold mb-3 bg-gradient-to-r from-pink-500 via-blue-400 to-yellow-400 bg-clip-text text-transparent">
+            <h2 className="text-2xl sm:text-3xl font-semibold mb-3 bg-gradient-to-r  text-yellow-400 bg-clip-text text-transparent">
               Pantry Supply Services
             </h2>
             <h3 className="text-base sm:text-lg font-semibold mb-3">
@@ -214,7 +217,7 @@ const Feature = () => {
           className="bg-white text-gray-900 py-16 px-4 sm:px-10 md:px-20"
           data-aos="fade-up"
         >
-          <h2 className="text-center text-2xl sm:text-3xl md:text-4xl font-bold mb-14 bg-gradient-to-r from-pink-500 via-blue-400 to-yellow-400 bg-clip-text text-transparent">
+          <h2 className="text-center text-2xl sm:text-3xl md:text-4xl font-bold mb-14 bg-gradient-to-r text-pink-400 bg-clip-text text-transparent">
             Why choose Vending Machine?
           </h2>
           <div className="flex flex-col sm:flex-row items-center gap-16">
@@ -252,10 +255,22 @@ const Feature = () => {
                   />,
                   "24/7 Availability",
                 ],
-                ["🏅", "Premium Quality"],
+                [<img
+                  src={medalIcon}
+                  alt="fulltimeIcon"
+                  className="w-20 sm:w-28 h-auto mx-auto"
+                />, "Premium Quality"],
 
-                ["📦", "Inventory Tracking"],
-                ["🔒", "Secure Payment"],
+                [<img
+                  src={packingIcon}
+                  alt="fulltimeIcon"
+                  className="w-20 sm:w-28 h-auto mx-auto"
+                />, "Inventory Tracking"],
+                [<img
+                  src={lockIcon}
+                  alt="fulltimeIcon"
+                  className="w-20 sm:w-28 h-auto mx-auto"
+                />, "Secure Payment"],
               ].map(([icon, text], i) => (
                 <div
                   className="text-center"
@@ -281,7 +296,7 @@ const Feature = () => {
           data-aos="fade-up"
         >
           <div className="text-center mb-10">
-            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-snug bg-gradient-to-r from-pink-500 via-blue-400 to-yellow-400 bg-clip-text text-transparent">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-snug bg-gradient-to-r text-pink-400 bg-clip-text text-transparent">
               Multi - Sector Approach
             </h1>
           </div>

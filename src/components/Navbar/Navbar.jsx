@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import CircuitLogo from "../CircuitLogo/CircuitLogo";
 import { NavLink, Link } from "react-router-dom";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
@@ -9,119 +9,116 @@ const Navbar = () => {
   const [navOpen, setNavOpen] = useState(false);
   const [isFixed, setIsFixed] = useState(true);
 
-  useEffect(() => {
-    const heroSection = document.getElementById("hero");
-    const heroHeight = heroSection ? heroSection.offsetHeight : 0;
-
-    const handleScroll = () => {
-      if (window.scrollY > heroHeight) {
-        setIsFixed(false);
-      } else {
-        setIsFixed(true);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  const navLinks = [
+    { to: "/", label: "Home" },
+    { to: "/about", label: "About Us" },
+    { to: "/service", label: "Service" },
+    { to: "/models", label: "Models" },
+    { to: "/contact", label: "Contact" },
+  ];
 
   return (
-    <div
+    <header
       className={`w-full top-0 left-0 z-[100] transition-all duration-300 ${
         isFixed
           ? "fixed bg-gradient-to-r from-pink-500 via-blue-400 to-yellow-400"
           : "absolute bg-transparent"
       }`}
     >
-      <nav className="flex justify-between items-center px-4 py-2 max-w-7xl mx-auto">
-        <Link to="/" className="flex items-center space-x-2">
+      {/* Main Nav */}
+      <nav className="flex justify-between items-center px-4 py-3 md:px-6 lg:px-8 max-w-7xl mx-auto">
+        {/* Logo */}
+        <Link to="/" className="flex items-center space-x-3">
           <CircuitLogo className="w-14 h-14" />
-          <h1 className="text-xl font-bold text-white">PCB Technology</h1>
+          <h1 className="text-xl font-bold text-white whitespace-nowrap">
+            PCB Technology
+          </h1>
         </Link>
 
-        <div className="flex items-center space-x-8 ml-auto">
-          {/* Desktop Menu */}
-          <ul className="hidden md:flex space-x-8 text-lg font-medium text-black">
-            {[
-              { to: "/", label: "Home" },
-              { to: "/about", label: "About Us" },
-              { to: "/service", label: "Service" },
-              { to: "/models", label: "Models" },
-              { to: "/contact", label: "Contact" },
-            ].map((item) => (
-              <li key={item.to} className="relative group">
-                <NavLink
-                  to={item.to}
-                  className={({ isActive }) =>
-                    `transition duration-300 pb-1 ${
-                      isActive ? "text-white" : "hover:text-white"
-                    }`
-                  }
-                >
-                  {({ isActive }) => (
-                    <>
-                      {item.label}
-                      <span
-                        className={`absolute left-0 bottom-0 h-[2px] bg-white transition-all duration-300 ${
-                          isActive ? "w-full" : "w-0 group-hover:w-full"
-                        }`}
-                      />
-                    </>
-                  )}
-                </NavLink>
-              </li>
-            ))}
-          </ul>
+        {/* Desktop Nav */}
+        <ul className="hidden md:flex space-x-8 text-base lg:text-lg font-medium text-black ml-auto">
+          {navLinks.map((item) => (
+            <li key={item.to} className="relative group">
+              <NavLink
+                to={item.to}
+                className={({ isActive }) =>
+                  `transition duration-300 pb-1 ${
+                    isActive ? "text-white" : "hover:text-white"
+                  }`
+                }
+              >
+                {({ isActive }) => (
+                  <>
+                    {item.label}
+                    <span
+                      className={`absolute left-0 bottom-0 h-[2px] bg-white transition-all duration-300 ${
+                        isActive ? "w-full" : "w-0 group-hover:w-full"
+                      }`}
+                    />
+                  </>
+                )}
+              </NavLink>
+            </li>
+          ))}
+        </ul>
 
-          {/* Mobile Menu Icon */}
-          <div
-            onClick={() => setNavOpen(true)}
-            className="md:hidden bg-gradient-to-r from-pink-500 via-blue-400 to-yellow-400 text-white text-3xl cursor-pointer p-2 rounded"
-          >
-            <AiOutlineMenu className="text-2xl" />
-          </div>
+        {/* Mobile Menu Icon */}
+        <div
+          onClick={() => setNavOpen(true)}
+          className="md:hidden bg-pink-400 hover:bg-pink-600 text-white text-2xl p-2 rounded cursor-pointer ml-2"
+        >
+          <AiOutlineMenu />
         </div>
       </nav>
 
-      {/* Mobile Menu Overlay */}
+      {/* Overlay */}
       {navOpen && (
         <div
           onClick={() => setNavOpen(false)}
-          className="fixed inset-0 bg-black bg-opacity-50 z-[90]"
+          className="fixed inset-0 bg-black bg-opacity-50 z-[90] md:hidden"
         />
       )}
 
-      {/* Mobile Menu Drawer */}
-      <div
-        className={`fixed top-0 right-0 h-screen w-3/5 bg-gradient-to-b from-pink-500 via-blue-400 to-yellow-400 text-white z-[100] transform transition-transform duration-500 ${
+      {/* Mobile Drawer */}
+      <aside
+        className={`fixed top-0 right-0 h-screen w-4/5 sm:w-2/3 max-w-56 bg-gradient-to-b from-pink-500 via-blue-400 to-yellow-400 text-white z-[100] transform transition-transform duration-500 ${
           navOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
         <div className="flex justify-end p-4">
           <AiOutlineClose
-            className="text-3xl cursor-pointer"
+            className="text-4xl cursor-pointer"
             onClick={() => setNavOpen(false)}
           />
         </div>
-        <ul className="flex flex-col items-start px-6 space-y-6 py-8 text-lg font-medium">
-          {[
-            { to: "/", label: "Home" },
-            { to: "/about", label: "About Us" },
-            { to: "/service", label: "Service" },
-            { to: "/models", label: "Models" },
-            { to: "/contact", label: "Contact" },
-          ].map((item) => (
-            <li key={item.to}>
-              <Link
+
+        <ul className="flex flex-col items-start px-6 space-y-6 py-4 text-base font-medium sm:text-lg">
+          {navLinks.map((item) => (
+            <li key={item.to} className="w-full group">
+              <NavLink
                 to={item.to}
                 onClick={() => setNavOpen(false)}
-                className="hover:text-white transition duration-300"
+                className={({ isActive }) =>
+                  `block w-fit relative transition duration-300 pb-1 ${
+                    isActive ? "text-white" : "hover:text-white"
+                  }`
+                }
               >
-                {item.label}
-              </Link>
+                {({ isActive }) => (
+                  <>
+                    {item.label}
+                    <span
+                      className={`absolute left-0 bottom-0 h-[2px] bg-white transition-all duration-300 ${
+                        isActive ? "w-full" : "w-0 group-hover:w-full"
+                      }`}
+                    />
+                  </>
+                )}
+              </NavLink>
             </li>
           ))}
-          <li className="flex items-center gap-2">
+
+          <li className="flex justify-start text-xl items-center gap-2 pt-4">
             <FaWhatsapp className="text-green-200" />
             <a
               href="https://wa.me/919225812922"
@@ -132,8 +129,9 @@ const Navbar = () => {
               +91 9225812922
             </a>
           </li>
-          <li className="flex items-start gap-2 w-full">
-            <IoMail className="text-blue-100 text-xl mt-1" />
+
+          <li className="flex justify-start text-sm items-start gap-2">
+            <IoMail className="text-blue-700 text-sm mt-1" />
             <a
               href="mailto:extrauserdata@gmail.com"
               target="_blank"
@@ -144,8 +142,8 @@ const Navbar = () => {
             </a>
           </li>
         </ul>
-      </div>
-    </div>
+      </aside>
+    </header>
   );
 };
 

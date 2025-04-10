@@ -17,7 +17,7 @@ const CounterPage = () => {
     <div className="px-5 md:px-20 py-12">
       {/* === HEADING === */}
       <div className="py-5 px-6 relative text-center">
-        <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-pink-600 via-purple-500 to-yellow-400 bg-clip-text text-transparent drop-shadow-sm">
+        <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-pink-600 to-purple-500  bg-clip-text text-transparent pb-3 ">
           Creating an Impact, One Transaction at a Time..
         </h2>
       </div>
@@ -25,7 +25,7 @@ const CounterPage = () => {
       {/* === COUNTER SECTION === */}
       <div
         ref={ref}
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-center gap-8 bg-gradient-to-r from-pink-500 via-blue-400 to-yellow-400 rounded-3xl px-8 py-16 shadow-xl"
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-center gap-8 bg-gradient-to-r from-pink-500 to-blue-400 rounded-3xl px-8 py-16 shadow-xl"
       >
         <div>
           <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white">

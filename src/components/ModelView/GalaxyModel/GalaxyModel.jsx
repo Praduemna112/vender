@@ -8,17 +8,18 @@ import Thermal_Plastic_Inner from "../../../assets/Thermal_Plastic_Inner.png";
 const GalaxyData = {
   name: "Galaxy",
   image: demoimage1,
-  description: "Featuring a seamless touchscreen,40mm foaming refrigeration, adjustable shelving, easy spiral twist mechanism, anti-theft bin, cashless payments (UPI, cards), direct fund transfer, and inventory management.",
+  description:
+    "Featuring a seamless touchscreen, 40mm foaming refrigeration, adjustable shelving, easy spiral twist mechanism, anti-theft bin, cashless payments (UPI, cards), direct fund transfer, and inventory management.",
   specs: [
-    ["Dimensions", "H:1940mm W:1180mm D:890mm"],
-    ["Touchscreen Interface", "10 Inch/ 13 Inch"],
-    ["SKUs", "60 varieties (max)"],
+    ["Dimensions", "H: 1940mm × W: 1180mm × D: 890mm"],
+    ["Touchscreen Interface", "10 Inch / 13 Inch"],
+    ["SKUs", "Up to 60 varieties"],
     ["No of Trays", "6"],
     ["Temperature Range", "4°C to 25°C"],
-    ["Voltage", "110V-120W/220V~240V50/60Hz"],
-    ["Power", "Refrigerated 422W Normal 24W"],
-    ["Weight", "350 kgs"],
-    ["Capacity", "510 pcs"],
+    ["Voltage", "110V–120W / 220V–240V, 50/60Hz"],
+    ["Power", "Refrigerated: 422W, Normal: 24W"],
+    ["Weight", "350 kg"],
+    ["Capacity", "510 items"],
   ],
   features: [
     {
@@ -42,7 +43,6 @@ const GalaxyData = {
       desc: "Maintains consistent internal temperature while enhancing durability and insulation.",
     },
   ],
-  
 };
 
 export default GalaxyData;
