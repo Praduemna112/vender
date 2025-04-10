@@ -94,7 +94,7 @@ const Feature = () => {
             className="w-full h-auto max-w-2xl mx-auto rounded-lg shadow-lg"
           />
           <div className="w-full sm:w-1/2 mt-8 sm:mt-0">
-            <h2 className="text-2xl sm:text-3xl font-semibold mb-6 bg-gradient-to-r  text-blue-500  bg-clip-text text-transparent">
+            <h2 className="text-2xl sm:text-3xl font-semibold mb-6 bg-gradient-to-r  text-blue-500  bg-clip-text ">
               Curated Range of Meals and Snacks
             </h2>
             <ul className="list-disc pl-5 space-y-2 text-base sm:text-lg">
@@ -159,7 +159,7 @@ const Feature = () => {
             className="w-full h-auto max-w-2xl mx-auto rounded-lg shadow-lg"
           />
           <div className="w-full sm:w-1/2">
-            <h2 className="text-2xl sm:text-3xl font-semibold mb-6 bg-gradient-to-r  text-blue-500 bg-clip-text text-transparent">
+            <h2 className="text-2xl sm:text-3xl font-semibold mb-6 bg-gradient-to-r  text-blue-500 bg-clip-text">
               Health and Personal Care
             </h2>
             <ul className="space-y-2 text-base sm:text-lg">
@@ -217,9 +217,9 @@ const Feature = () => {
           className="bg-white text-gray-900 py-16 px-4 sm:px-10 md:px-20"
           data-aos="fade-up"
         >
-         <h2 className="text-center text-2xl sm:text-3xl md:text-4xl font-bold mb-14 bg-gradient-to-r text-pink-500  bg-clip-text ">
-  Why choose Vending Machine?
-</h2>
+          <h2 className="text-center text-2xl sm:text-3xl md:text-4xl font-bold mb-14 bg-gradient-to-r text-pink-500  bg-clip-text ">
+            Why choose Vending Machine?
+          </h2>
           <div className="flex flex-col sm:flex-row items-center gap-16">
             <div className="w-full min-h-80 sm:w-1/3 flex justify-center sm:justify-end">
               <img
@@ -255,22 +255,31 @@ const Feature = () => {
                   />,
                   "24/7 Availability",
                 ],
-                [<img
-                  src={medalIcon}
-                  alt="fulltimeIcon"
-                  className="w-20 sm:w-28 h-auto mx-auto"
-                />, "Premium Quality"],
+                [
+                  <img
+                    src={medalIcon}
+                    alt="fulltimeIcon"
+                    className="w-20 sm:w-28 h-auto mx-auto"
+                  />,
+                  "Premium Quality",
+                ],
 
-                [<img
-                  src={packingIcon}
-                  alt="fulltimeIcon"
-                  className="w-20 sm:w-28 h-auto mx-auto"
-                />, "Inventory Tracking"],
-                [<img
-                  src={lockIcon}
-                  alt="fulltimeIcon"
-                  className="w-20 sm:w-28 h-auto mx-auto"
-                />, "Secure Payment"],
+                [
+                  <img
+                    src={packingIcon}
+                    alt="fulltimeIcon"
+                    className="w-20 sm:w-28 h-auto mx-auto"
+                  />,
+                  "Inventory Tracking",
+                ],
+                [
+                  <img
+                    src={lockIcon}
+                    alt="fulltimeIcon"
+                    className="w-20 sm:w-28 h-auto mx-auto"
+                  />,
+                  "Secure Payment",
+                ],
               ].map(([icon, text], i) => (
                 <div
                   className="text-center"
