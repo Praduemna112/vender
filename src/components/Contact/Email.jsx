@@ -101,7 +101,7 @@ const Email = () => {
             required
             className="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500"
           >
-            <option value="None" selected>
+            <option value="None">
               --- Please Select ---
             </option>
             <option value="install_premises">I want to install your vending machines in my premises</option>
