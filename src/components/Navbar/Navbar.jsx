@@ -30,9 +30,10 @@ const Navbar = () => {
         {/* Logo */}
         <Link to="/" className="flex items-center space-x-3">
           <CircuitLogo className="w-14 h-14" />
-          <h1 className="text-xl font-bold text-white whitespace-nowrap">
-            PCB Technology
-          </h1>
+          <div className="text-white font-bold whitespace-nowrap">
+            <h1 className="text-xl block sm:hidden">PCB Technology</h1>
+            <h1 className="text-3xl hidden sm:block">PCB Technology</h1>
+          </div>
         </Link>
 
         {/* Desktop Nav */}
@@ -118,7 +119,7 @@ const Navbar = () => {
             </li>
           ))}
 
-          <li className="flex justify-start text-lg items-center gap-2 pt-4">
+          <li className="flex justify-start text-xl items-center gap-2 pt-4">
             <FaWhatsapp className="text-green-200" />
             <a
               href="https://wa.me/919225812922"

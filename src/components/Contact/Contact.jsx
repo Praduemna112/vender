@@ -1,6 +1,7 @@
 import React from "react";
 import { FaWhatsapp } from "react-icons/fa6";
 import { IoMail } from "react-icons/io5";
+import Email from "./Email";
 
 const Contact = () => {
   return (
@@ -22,7 +23,12 @@ const Contact = () => {
           <div className="w-screen h-10 sm:h-14 md:h-20 bg-gradient-to-r from-orange-400 to-transparent rounded-tl-full rounded-tr-full" />
         </div>
       </section>
-      {/* Google Form */}
+
+      <div>
+        <Email/>
+
+      </div>
+      {/* Google Form
       <div className="px-10 sm:px-10 mt-12">
         <iframe
           src="https://docs.google.com/forms/d/e/1FAIpQLSe80A5HFnin0RaoGiUM5qtMK17H3gMDtYknxanBQlVj_D_MNg/viewform?embedded=true"
@@ -31,7 +37,7 @@ const Contact = () => {
         >
           Loading…
         </iframe>
-      </div>
+      </div> */}
 
       {/* Contact Section */}
       <div className="mt-16 px-4 sm:px-10 flex flex-col sm:flex-row items-start gap-10">
