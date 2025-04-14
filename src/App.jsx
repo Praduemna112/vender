@@ -12,9 +12,11 @@ import Contact from "./components/Contact/Contact";
 import Model from "./components/ModelView/Model";
 import EnquirePage from "./components/EnquirePage/EnquirePage";
 import Footer from "./components/Footer/Footer";
-
 import ScrollToTop from "./components/ScrollToTop";
 import Service from "./components/Services/Service";
+import Privacy_Policy from "./components/Privacy_Policy/Privacy_Policy";
+import Terms_Conditions from "./components/Terms_&_Conditions/Terms_Conditions";
+import Return_Refund_Policy from "./components/Return_Refund_Policy/Return_Refund_Policy";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -33,6 +35,10 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/models" element={<Model />} />
           <Route path="/enquire" element={<EnquirePage />} />
+          <Route path="/privacypolicy" element={<Privacy_Policy />} />
+          <Route path="/terms_conditions" element={<Terms_Conditions />} />
+          <Route path="/return_refund_policy" element={<Return_Refund_Policy />} />
+
         </Routes>
 
         <Footer />

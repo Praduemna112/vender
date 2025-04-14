@@ -109,10 +109,20 @@ const Footer = () => {
             <div>
               <h3 className="font-bold mb-3 text-lg">Legal</h3>
               <ul className="space-y-2 text-sm">
-                <li className={hoverGradient}>Privacy Policy</li>
-                <li className={hoverGradient}>Terms & Conditions</li>
-                <li className={hoverGradient}>
-                  Return, Refund & Cancellation Policy
+                <li>
+                  <Link to="/privacypolicy" className={hoverGradient}>
+                    Privacy Policy
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/terms_conditions" className={hoverGradient}>
+                    Terms & Conditions
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/return_refund_policy" className={hoverGradient}>
+                    Return, Refund & Cancellation Policy
+                  </Link>
                 </li>
               </ul>
             </div>
