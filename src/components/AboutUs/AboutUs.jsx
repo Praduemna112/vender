@@ -23,7 +23,7 @@ const AboutUs = () => {
         <div className="absolute inset-0 bg-black opacity-30" />
         <div className="relative z-10 flex flex-col items-center text-center mt-32 sm:mt-36 md:mt-44 lg:mt-52 gap-y-6 sm:gap-y-8">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white drop-shadow-lg">
-            Smart Retail Solutions
+            About Us
           </h1>
           <p className="max-w-4xl text-base sm:text-lg md:text-xl text-white font-semibold px-2">
             At PCB Technology, we offer a wide range of vending machine models,
