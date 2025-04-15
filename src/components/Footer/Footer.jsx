@@ -67,7 +67,7 @@ const Footer = () => {
               />
             </a>
             <a
-              href="https://www.youtube.com/@YourChannel"
+              href="https://www.youtube.com/@JioVendor"
               target="_blank"
               rel="noopener noreferrer"
               className="p-[2px] rounded-full transition-all duration-300 hover:bg-gradient-to-tr hover:from-pink-600 hover:via-purple-500 hover:to-yellow-400"
