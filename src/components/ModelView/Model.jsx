@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import GalaxyModel from "../ModelView/GalaxyModel/GalaxyModel";
 import NovaModel from "./NovaModel/NovaModel";
 import OrionModel from "./OrionModel/OrionModel";
+import TabletopModel from "./TabletopModel/TabletopModel";
 
 const FeatureCard = ({ img, title, desc }) => (
   <div className="bg-white shadow-md rounded-xl overflow-hidden border border-gray-200 hover:shadow-lg hover:scale-[1.02] transition duration-300">
@@ -14,7 +15,7 @@ const FeatureCard = ({ img, title, desc }) => (
   </div>
 );
 
-const models = [GalaxyModel, NovaModel, OrionModel];
+const models = [GalaxyModel, NovaModel, OrionModel,TabletopModel];
 
 const Model = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -62,7 +63,7 @@ const Model = () => {
         <div className="w-full max-w-7xl flex flex-col gap-10 bg-white border border-gray-300 rounded-2xl shadow-md p-6 sm:p-8">
           <div className="flex flex-col md:flex-row items-center gap-6">
             {/* IMAGE */}
-            <div className="w-full md:w-2/3 flex justify-center">
+            <div className="w-full md:w-2/3 flex justify-center ">
               <img
                 src={activeModel.image}
                 alt={activeModel.name}
