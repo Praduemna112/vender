@@ -122,11 +122,11 @@ const Navbar = () => {
           <li className="flex justify-start text-mg items-center gap-2 pt-4">
             <FaWhatsapp className="text-green-200" />
             <a
-              href="https://wa.me/918329987533"
+             href="https://wa.me/918329987533?text=Let%20me%20know%20more%20details%20about%20PTM%20Machine"
               target="_blank"
               className="hover:underline"
             >
-              +91 9225812922
+              +91 8329987533
             </a>
           </li>
 

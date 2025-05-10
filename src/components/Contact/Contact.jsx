@@ -14,7 +14,7 @@ const Contact = () => {
         <div className="absolute inset-0 bg-black opacity-30" />
         <div className="relative z-10 flex flex-col items-center text-center mt-32 sm:mt-36 md:mt-44 lg:mt-52 gap-y-6 sm:gap-y-8">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white drop-shadow-lg">
-          We’d love to hear from you…
+            We’d love to hear from you…
           </h1>
           <p className="max-w-4xl text-base sm:text-lg md:text-xl text-white font-semibold px-2">
             At PCB Technology, we offer a wide range of vending machine models,
@@ -25,8 +25,7 @@ const Contact = () => {
       </section>
 
       <div>
-        <Email/>
-
+        <Email />
       </div>
       {/* Google Form
       <div className="px-10 sm:px-10 mt-12">
@@ -66,12 +65,11 @@ const Contact = () => {
               <span>Customer Care Number:</span>
               <FaWhatsapp className="text-green-500" />
               <a
-                href="https://wa.me/918329987533"
+                href="https://wa.me/918329987533?text=Let%20me%20know%20more%20details%20about%20PTM%20Machine"
                 target="_blank"
-                rel="noopener noreferrer"
                 className="text-black hover:text-orange-600 underline"
               >
-                +91 9225812922
+                +91 8329987533
               </a>
             </li>
             <li className="flex items-center gap-2">
@@ -80,7 +78,6 @@ const Contact = () => {
               <a
                 href="mailto:extrauserdata@gmail.com"
                 target="_blank"
-                rel="noopener noreferrer"
                 className="text-black hover:text-orange-600 underline"
               >
                 extrauserdata@gmail.com
