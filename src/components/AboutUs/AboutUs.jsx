@@ -1,17 +1,11 @@
 import React, { useEffect } from "react";
-import AOS from "aos";
+
 import "aos/dist/aos.css";
 import settingVender from "../../assets/settingVender.png";
 import vendingMachine from "../../assets/machine1.jpeg";
 
 const AboutUs = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: false,
-      mirror: true,
-    });
-  }, []);
+
 
   return (
     <div className="w-full font-medium overflow-x-hidden">
@@ -38,18 +32,17 @@ const AboutUs = () => {
         {/* === ABOUT US === */}
         <div
           className="flex flex-col md:flex-row items-center justify-between gap-10"
-          data-aos="fade-up"
+          
         >
           <img
             src={vendingMachine}
             alt="Vending Machine"
             className="w-full md:w-1/2 h-auto max-w-[500px] mx-auto rounded-xl shadow-2xl"
-            data-aos="fade-up"
+         
           />
           <div
             className="w-full md:w-1/2 mt-8 md:mt-0"
-            data-aos="fade-up"
-            data-aos-delay="200"
+         
           >
             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-orange-400 to-blue-400 mb-6">
               About Us
@@ -69,12 +62,11 @@ const AboutUs = () => {
         {/* === OUR VISION & MISSION === */}
         <div
           className="flex flex-col-reverse md:flex-row items-center justify-between gap-10"
-          data-aos="fade-up"
+          
         >
           <div
             className="w-full md:w-1/2"
-            data-aos="fade-up"
-            data-aos-delay="200"
+           
           >
             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-orange-400 to-blue-400 mb-6">
               Our Vision & Mission
@@ -96,7 +88,7 @@ const AboutUs = () => {
             src={settingVender}
             alt="Smart Retail Setup"
             className="w-full md:w-1/2 h-auto max-w-[500px] mx-auto rounded-xl shadow-2xl"
-            data-aos="fade-up"
+            
           />
         </div>
       </div>

@@ -45,7 +45,7 @@ const HeroSection = () => {
 
         {/* Know More Button */}
         <Link to="/about">
-          <button className="bg-gradient-to-r bg-pink-400 hover:bg-pink-600 text-white py-2 px-6 rounded-full hover:opacity-90 transition duration-300 text-sm sm:text-base md:text-lg shadow-lg">
+          <button className="bg-gradient-to-r bg-pink-400 hover:bg-pink-600 text-white py-2 px-6 rounded-full hover:opacity-90 transform transition-all duration-300 hover:scale-110 text-sm sm:text-base md:text-lg shadow-lg">
             Know More
           </button>
         </Link>
