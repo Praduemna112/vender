@@ -17,6 +17,7 @@ import Service from "./components/Services/Service";
 import Privacy_Policy from "./components/Privacy_Policy/Privacy_Policy";
 import Terms_Conditions from "./components/Terms_&_Conditions/Terms_Conditions";
 import Return_Refund_Policy from "./components/Return_Refund_Policy/Return_Refund_Policy";
+import WhatsAppButton from "./components/WhatsAppButton/WhatsAppButton";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -40,7 +41,7 @@ function App() {
           <Route path="/return_refund_policy" element={<Return_Refund_Policy />} />
 
         </Routes>
-
+        <WhatsAppButton /> 
         <Footer />
       </div>
     </Router>
