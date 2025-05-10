@@ -21,6 +21,7 @@ const EnquirePage = () => {
 
   return (
     <div className="w-full font-medium">
+      {/* Hero Section */}
       <section
         id="hero"
         className="relative w-full min-h-[45vh] sm:min-h-[50vh] md:min-h-[60vh] bg-gradient-to-br from-pink-500 via-blue-400 to-yellow-400 flex flex-col items-center justify-center px-4"
@@ -67,13 +68,14 @@ const EnquirePage = () => {
       </section>
 
       {/* Carousel Section */}
-      <div className="py-20 flex items-center justify-center px-1 sm:px-2 -mt-8">
+      <div className="py-20 flex items-center justify-center px-2 sm:px-4 md:px-6 -mt-8">
         <div
           id="carouselExampleIndicators"
           className="carousel slide w-full max-w-[1200px]"
           data-bs-ride="carousel"
-          data-bs-interval="2000"
+          data-bs-interval="3000"
         >
+          {/* Carousel Indicators */}
           <div className="carousel-indicators">
             <button
               type="button"
@@ -97,33 +99,24 @@ const EnquirePage = () => {
             ></button>
           </div>
 
+          {/* Carousel Images */}
           <div className="carousel-inner">
-            <div className="carousel-item active">
-              <img
-                src={img1}
-                className="d-block w-full object-cover rounded"
-                style={imageStyle}
-                alt="Slide 1"
-              />
-            </div>
-            <div className="carousel-item">
-              <img
-                src={img2}
-                className="d-block w-full object-cover rounded"
-                style={imageStyle}
-                alt="Slide 2"
-              />
-            </div>
-            <div className="carousel-item">
-              <img
-                src={img3}
-                className="d-block w-full object-cover rounded"
-                style={imageStyle}
-                alt="Slide 3"
-              />
-            </div>
+            {[img1, img2, img3].map((img, index) => (
+              <div
+                className={`carousel-item ${index === 0 ? "active" : ""}`}
+                key={index}
+              >
+                <img
+                  src={img}
+                  className="d-block w-full object-cover rounded max-h-[550px] sm:max-h-[600px] md:max-h-[650px]"
+                  alt={`Slide ${index + 1}`}
+                  style={imageStyle}
+                />
+              </div>
+            ))}
           </div>
 
+          {/* Carousel Controls */}
           <button
             className="carousel-control-prev"
             type="button"
@@ -131,7 +124,7 @@ const EnquirePage = () => {
             data-bs-slide="prev"
           >
             <span
-              className="carousel-control-prev-icon bg-dark rounded-full w-10 h-10 sm:w-14 sm:h-14"
+              className="carousel-control-prev-icon bg-black bg-opacity-60 rounded-full w-10 h-10 sm:w-14 sm:h-14 md:w-16 md:h-16"
               aria-hidden="true"
               style={{ backgroundSize: "100% 100%" }}
             ></span>
@@ -145,7 +138,7 @@ const EnquirePage = () => {
             data-bs-slide="next"
           >
             <span
-              className="carousel-control-next-icon bg-dark rounded-full w-10 h-10 sm:w-14 sm:h-14"
+              className="carousel-control-next-icon bg-black bg-opacity-60 rounded-full w-10 h-10 sm:w-14 sm:h-14 md:w-16 md:h-16"
               aria-hidden="true"
               style={{ backgroundSize: "100% 100%" }}
             ></span>
