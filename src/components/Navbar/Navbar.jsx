@@ -122,7 +122,7 @@ const Navbar = () => {
           <li className="flex justify-start text-mg items-center gap-2 pt-4">
             <FaWhatsapp className="text-green-200" />
             <a
-              href="https://wa.me/919225812922"
+              href="https://wa.me/918329987533"
               target="_blank"
               className="hover:underline"
             >

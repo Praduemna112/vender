@@ -66,7 +66,7 @@ const Contact = () => {
               <span>Customer Care Number:</span>
               <FaWhatsapp className="text-green-500" />
               <a
-                href="https://wa.me/919225812922"
+                href="https://wa.me/918329987533"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-black hover:text-orange-600 underline"
