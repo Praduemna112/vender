@@ -9,7 +9,7 @@ const EnquirePage = () => {
   const [isHovered, setIsHovered] = useState(false);
 
   const imageStyle = {
-    height: "auto", // Make height flexible for mobile
+    height: "auto",
     maxHeight: "550px",
   };
 
@@ -23,7 +23,8 @@ const EnquirePage = () => {
     <div className="w-full font-medium">
       {/* Hero Section */}
       <div className="relative h-[45vh] md:h-[55vh] flex flex-col items-center justify-center text-white text-center px-4 pt-28 md:pt-32">
-        <div className="absolute inset-0 bg-orange-700 opacity-80"></div>
+        {/* ✅ Fixed Gradient Background */}
+        <div className="absolute inset-0 bg-gradient-to-r from-pink-500 via-blue-400 to-yellow-400 opacity-80"></div>
 
         <div className="relative z-10 flex flex-col items-center w-full">
           <div
@@ -41,14 +42,14 @@ const EnquirePage = () => {
               }}
             >
               <div
-                className="absolute w-full h-full flex items-center justify-center bg-orange-500 text-white text-base sm:text-lg font-semibold rounded-xl shadow-xl"
+                className="absolute w-full h-full flex items-center justify-center bg-violet-500 text-white text-base sm:text-lg font-semibold rounded-xl shadow-xl"
                 style={{ backfaceVisibility: "hidden" }}
               >
                 Tap to Enquire
               </div>
 
               <div
-                className="absolute w-full h-full flex items-center justify-center bg-white text-orange-600 text-base sm:text-lg font-semibold rounded-xl shadow-xl"
+                className="absolute w-full h-full flex items-center justify-center bg-violet-600 text-white text-base sm:text-lg font-semibold rounded-xl shadow-xl"
                 style={{
                   backfaceVisibility: "hidden",
                   transform: "rotateY(180deg)",
@@ -60,13 +61,12 @@ const EnquirePage = () => {
           </div>
 
           {/* Full-width gradient bar below the flip card */}
-          <div className="w-full h-16 sm:h-20 bg-gradient-to-r from-orange-400 to-transparent rounded-tl-full rounded-tr-full mt-6 sm:mt-8"></div>
+          <div className="w-full h-16 sm:h-20 bg-gradient-to-r from-orange-400 rounded-tl-full rounded-tr-full mt-6 sm:mt-8"></div>
         </div>
       </div>
 
       {/* Carousel Section */}
       <div className="py-20 flex items-center justify-center px-1 sm:px-2 -mt-8">
-
         <div
           id="carouselExampleIndicators"
           className="carousel slide w-full max-w-[1200px]"

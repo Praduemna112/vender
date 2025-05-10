@@ -1,3 +1,9 @@
+ git add .           
+ git commit -m "first commit"
+ git branch -M main
+ git remote add origin https://github.com/Praduemna112/vender.git    
+ git push -u origin main
+
 in the using contact us while i am using Emailjs 
 serviceId:service_d2tzp19
 templateId:template_nvyn0bf
