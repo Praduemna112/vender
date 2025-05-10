@@ -119,12 +119,11 @@ const Navbar = () => {
             </li>
           ))}
 
-          <li className="flex justify-start text-xl items-center gap-2 pt-4">
+          <li className="flex justify-start text-mg items-center gap-2 pt-4">
             <FaWhatsapp className="text-green-200" />
             <a
               href="https://wa.me/919225812922"
               target="_blank"
-              rel="noopener noreferrer"
               className="hover:underline"
             >
               +91 9225812922
@@ -136,7 +135,6 @@ const Navbar = () => {
             <a
               href="mailto:extrauserdata@gmail.com"
               target="_blank"
-              rel="noopener noreferrer"
               className="hover:underline text-sm break-words"
             >
               extrauserdata@gmail.com
