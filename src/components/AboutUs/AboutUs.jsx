@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import "aos/dist/aos.css";
 import img1 from "../../assets/machine1.webp";
 import img2 from "../../assets/machine2.webp";
-import img3 from "../../assets/machine3.webp";
+
 
 const AboutUs = () => {
   return (

@@ -95,7 +95,7 @@ const Feature = () => {
           <img
             src={img1}
             alt="img1"
-            className="w-full h-auto max-w-xl mx-auto rounded-lg shadow-2xl"
+            className="w-full h-auto max-w-lg mx-auto rounded-lg shadow-2xl"
           />
           <div className="w-full sm:w-1/2 mt-8 sm:mt-0">
             <h2 className="text-2xl sm:text-3xl font-semibold mb-6 bg-gradient-to-r  text-blue-400  bg-clip-text ">
@@ -136,7 +136,7 @@ const Feature = () => {
             <img
               src={img2}
               alt="img2"
-              className="w-full h-auto max-w-lg mx-auto rounded-lg shadow-lg"
+              className="w-full h-auto max-w-sm mx-auto rounded-lg shadow-lg"
             />
           </div>
         </div>
@@ -151,7 +151,7 @@ const Feature = () => {
           <img
             src={img3}
             alt="img3"
-            className="w-full h-auto max-w-lg mx-auto rounded-lg shadow-lg"
+            className="w-full h-auto max-w-sm mx-auto rounded-lg shadow-lg"
           />
           <div className="w-full sm:w-1/2">
             <h2 className="text-2xl sm:text-3xl font-semibold mb-6 bg-gradient-to-r  text-blue-400 bg-clip-text ">
@@ -199,7 +199,7 @@ const Feature = () => {
             <img
               src={img4}
               alt="img4"
-              className="w-full h-auto max-w-lg mx-auto rounded-lg shadow-lg"
+              className="w-full h-auto max-w-md mx-auto rounded-lg"
             />
           </div>
         </div>
