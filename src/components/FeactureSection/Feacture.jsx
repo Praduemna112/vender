@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import img1 from "../../../src/assets/machine1.jpeg";
-import img2 from "../../../src/assets/machine2.jpeg";
-import img3 from "../../../src/assets/machine3.jpeg";
-import img4 from "../../../src/assets/machine4.png";
+import img1 from "../../../src/assets/machine1.webp";
+import img2 from "../../assets/machine2.webp";
+import img3 from "../../assets/machine3.webp";
+import img4 from "../../assets/machine4.webp";
 import demoImage_1 from "../../assets/GalaxyModel.webp";
 
 import gearIcon from "../../assets/Gear.png";

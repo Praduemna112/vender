@@ -2,9 +2,9 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import "aos/dist/aos.css";
-import img1 from "../../../src/assets/machine1.jpeg";
-import img2 from "../../../src/assets/machine2.jpeg";
-import img3 from "../../../src/assets/machine3.jpeg";
+import img1 from "../../assets/machine1.webp";
+import img2 from "../../assets/machine2.webp";
+import img3 from "../../assets/machine3.webp";
 
 const AboutUs = () => {
   return (

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import img1 from "../../assets/machine1.jpeg";
-import img2 from "../../assets/machine1.jpeg";
-import img3 from "../../assets/machine1.jpeg";
+import img1 from "../../assets/machine1.webp";
+import img2 from "../../assets/machine2.webp";
+import img3 from "../../assets/machine3.webp";
 
 const EnquirePage = () => {
   const navigate = useNavigate();
