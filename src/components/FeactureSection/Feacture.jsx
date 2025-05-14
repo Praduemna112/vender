@@ -1,8 +1,12 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import vendingMachine from "../../assets/machine1.jpeg";
-import settingVender from "../../assets/settingVender.png";
+import img1 from "../../../src/assets/machine1.jpeg";
+import img2 from "../../../src/assets/machine2.jpeg";
+import img3 from "../../../src/assets/machine3.jpeg";
+import img4 from "../../../src/assets/machine4.png";
+import demoImage_1 from "../../assets/GalaxyModel.webp";
+
 import gearIcon from "../../assets/Gear.png";
 import foodIcon from "../../assets/Food_icon.jpg";
 import thumbIcon from "../../assets/Thumb.png";
@@ -74,7 +78,7 @@ const Feature = () => {
       </div>
 
       {/* Main Content Sections */}
-      <div className="bg-white text-gray-900 px-4 sm:px-10 md:px-20 py-12">
+      <div className="bg-white text-gray-900 px-4 sm:px-8 md:px-18 py-12">
         {/* Hero Text */}
         <div className="text-center mb-10" data-aos="fade-up">
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-snug bg-gradient-to-r text-pink-500 p-4 rounded-lg ">
@@ -89,24 +93,18 @@ const Feature = () => {
           data-aos="fade-up"
         >
           <img
-            src={vendingMachine}
-            alt="Vending Machine"
-            className="w-full h-auto max-w-2xl mx-auto rounded-lg shadow-lg"
+            src={img1}
+            alt="img1"
+            className="w-full h-auto max-w-xl mx-auto rounded-lg shadow-2xl"
           />
           <div className="w-full sm:w-1/2 mt-8 sm:mt-0">
             <h2 className="text-2xl sm:text-3xl font-semibold mb-6 bg-gradient-to-r  text-blue-400  bg-clip-text ">
               Curated Range of Snacks
             </h2>
             <ul className="list-disc pl-5 space-y-2 text-base sm:text-lg">
-              <li>
-                Fresh and healthy snacks
-              </li>
-              <li>
-                Convenient and easy to use snacks
-              </li>
-              <li>
-                Close packaged wafers
-              </li>
+              <li>Fresh and healthy snacks</li>
+              <li>Convenient and easy to use snacks</li>
+              <li>Close packaged wafers</li>
               <li>
                 Desserts & Confectionaries: Chocolates, Energy bars, Chikki,
                 Granola bars
@@ -129,7 +127,6 @@ const Feature = () => {
             <ul className="list-disc pl-5 space-y-2 text-base sm:text-lg">
               <li>Healthy & Nutritious Juices</li>
               <li>Energy Drinks</li>
-              <li>Indian Beverages like Lassi & Chaas</li>
               <li>Packaged Drinking Water</li>
               <li>Aerated Cold Beverages</li>
               <li>Milk-based beverages (Cold Coffee, Milkshakes)</li>
@@ -137,9 +134,9 @@ const Feature = () => {
           </div>
           <div className="w-full sm:w-1/2 flex justify-end">
             <img
-              src={settingVender}
-              alt="Vending Machine"
-              className="w-full max-w-2xl h-auto rounded-lg shadow-lg"
+              src={img2}
+              alt="img2"
+              className="w-full h-auto max-w-lg mx-auto rounded-lg shadow-lg"
             />
           </div>
         </div>
@@ -152,9 +149,9 @@ const Feature = () => {
           data-aos="fade-up"
         >
           <img
-            src={vendingMachine}
-            alt="Vending Machine"
-            className="w-full h-auto max-w-2xl mx-auto rounded-lg shadow-lg"
+            src={img3}
+            alt="img3"
+            className="w-full h-auto max-w-lg mx-auto rounded-lg shadow-lg"
           />
           <div className="w-full sm:w-1/2">
             <h2 className="text-2xl sm:text-3xl font-semibold mb-6 bg-gradient-to-r  text-blue-400 bg-clip-text ">
@@ -185,25 +182,24 @@ const Feature = () => {
               Pantry Supply Services
             </h2>
             <h3 className="text-base sm:text-lg font-semibold mb-3">
-              Allow Vendiman to manage your pantry supplies through Smart Micro
-              Retail Solutions.
+              Allow us to manage your pantry supplies through Smart Vending
+              Machines
             </h3>
             <ul className="space-y-2 text-base sm:text-lg mt-4">
               <li>Product Categories:</li>
             </ul>
             <ul className="list-disc pl-5 space-y-2 text-base sm:text-lg mt-6">
               <li>Healthy Snacks & Biscuits (Retail & Bulk Packs)</li>
-              <li>Ready To Eat Meals – Breakfast/All Day Dining</li>
-              <li>Tea & Coffee Essentials</li>
+              <li>Ready To Eat Meals - Breakfast / All Day Dining</li>
               <li>Beverages</li>
               <li>Bottled Water</li>
             </ul>
           </div>
           <div className="w-full sm:w-1/2 flex justify-end">
             <img
-              src={settingVender}
-              alt="Vending Machine"
-              className="w-full max-w-2xl h-auto rounded-lg shadow-lg"
+              src={img4}
+              alt="img4"
+              className="w-full h-auto max-w-lg mx-auto rounded-lg shadow-lg"
             />
           </div>
         </div>
@@ -221,9 +217,9 @@ const Feature = () => {
           <div className="flex flex-col sm:flex-row items-center gap-16">
             <div className="w-full min-h-80 sm:w-1/3 flex justify-center sm:justify-end">
               <img
-                src={vendingMachine}
+                src={demoImage_1}
                 alt="Vending Machine"
-                className="w-full max-w-sm rounded-lg object-contain"
+                className="w-full max-w-sm h-auto rounded-lg object-contain"
               />
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 w-full sm:w-2/3 bg-white bg-opacity-90 shadow-md p-8 sm:p-14 rounded-lg text-gray-900">
@@ -253,22 +249,31 @@ const Feature = () => {
                   />,
                   "24/7 Availability",
                 ],
-                [<img
-                  src={medalIcon}
-                  alt="fulltimeIcon"
-                  className="w-20 sm:w-28 h-auto mx-auto"
-                />, "Premium Quality"],
+                [
+                  <img
+                    src={medalIcon}
+                    alt="fulltimeIcon"
+                    className="w-20 sm:w-28 h-auto mx-auto"
+                  />,
+                  "Premium Quality",
+                ],
 
-                [<img
-                  src={packingIcon}
-                  alt="fulltimeIcon"
-                  className="w-20 sm:w-28 h-auto mx-auto"
-                />, "Inventory Tracking"],
-                [<img
-                  src={lockIcon}
-                  alt="fulltimeIcon"
-                  className="w-20 sm:w-28 h-auto mx-auto"
-                />, "Secure Payment"],
+                [
+                  <img
+                    src={packingIcon}
+                    alt="fulltimeIcon"
+                    className="w-20 sm:w-28 h-auto mx-auto"
+                  />,
+                  "Inventory Tracking",
+                ],
+                [
+                  <img
+                    src={lockIcon}
+                    alt="fulltimeIcon"
+                    className="w-20 sm:w-28 h-auto mx-auto"
+                  />,
+                  "Secure Payment",
+                ],
               ].map(([icon, text], i) => (
                 <div
                   className="text-center"
@@ -289,7 +294,7 @@ const Feature = () => {
         </div>
 
         {/* Final Heading */}
-        <div
+        {/* <div
           className="bg-white px-4 sm:px-10 md:px-20 py-12"
           data-aos="fade-up"
         >
@@ -298,7 +303,7 @@ const Feature = () => {
               Multi - Sector Approach
             </h1>
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );

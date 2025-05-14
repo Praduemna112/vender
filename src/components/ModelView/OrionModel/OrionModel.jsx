@@ -1,5 +1,5 @@
 // src/components/ModelView/GalaxyModel/GalaxyData.js
-import demoimage3 from "../../../assets/demoImage_3.jpg";
+import demoimage3 from "../../../assets/OrionModel.webp";
 import Doorseel from "../../../assets/Doorseel.jpg";
 import Double_layer from "../../../assets/Double_layer.png";
 import Flexible_Slots from "../../../assets/Flexible_Slots.png";

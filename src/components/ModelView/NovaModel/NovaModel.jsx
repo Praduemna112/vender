@@ -1,5 +1,5 @@
 // src/components/ModelView/GalaxyModel/GalaxyData.js
-import demoimage2 from "../../../assets/demoImage_2.jpg";
+import Nova from "../../../assets/NovaModel.webp";
 import Anti_theft_division_plate_opening from "../../../assets/Anti_theft_division_plate_opening.jpg";
 import Conveyor_belt_delivery from "../../../assets/Conveyor_belt_delivery.png";
 import Pull_out_hopper from "../../../assets/Pull_out_hopper.png";
@@ -7,7 +7,7 @@ import Elevator_system from "../../../assets/Elevator_system.png";
 
 const NovaModel = {
   name: "Nova",
-  image: demoimage2,
+  image: Nova,
   description:
     "Featuring a seamless touchscreen, 40mm foaming refrigeration, adjustable shelving, easy spiral twist mechanism, anti-theft bin, cashless payments (UPI, cards), direct fund transfer, and inventory management.",
   specs: [

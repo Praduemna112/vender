@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import GalaxyModel from "../ModelView/GalaxyModel/GalaxyModel";
-import NovaModel from "./NovaModel/NovaModel";
-import OrionModel from "./OrionModel/OrionModel";
+import NovaModel from "../ModelView/NovaModel/NovaModel";
+import OrionModel from "../ModelView/OrionModel/OrionModel";
 import TabletopModel from "./TabletopModel/TabletopModel";
 
 const FeatureCard = ({ img, title, desc }) => (

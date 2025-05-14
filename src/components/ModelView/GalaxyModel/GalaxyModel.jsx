@@ -1,13 +1,14 @@
 // src/components/ModelView/GalaxyModel/GalaxyData.js
-import demoimage1 from "../../../assets/demoImage_1.jpg";
+import GalaxyModel from "../../../assets/GalaxyModel.webp";
 import Doorseel from "../../../assets/Doorseel.jpg";
 import Easy_Maintenance from "../../../assets/Easy_Maintenance.png";
 import Flexible_Slots from "../../../assets/Flexible_Slots.png";
 import Thermal_Plastic_Inner from "../../../assets/Thermal_Plastic_Inner.png";
 
 const GalaxyData = {
+  loading: "lazy",
   name: "Galaxy",
-  image: demoimage1,
+  image: GalaxyModel,
   description:
     "Featuring a seamless touchscreen, 40mm foaming refrigeration, adjustable shelving, easy spiral twist mechanism, anti-theft bin, cashless payments (UPI, cards), direct fund transfer, and inventory management.",
   specs: [

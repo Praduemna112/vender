@@ -1,13 +1,15 @@
 // src/components/ModelView/GalaxyModel/GalaxyData.js
-import demoimage4 from "../../../assets/demoImage_4.png";
+import demoimage4 from "../../../assets/TabletopModel.webp";
 import Doorseel from "../../../assets/Doorseel.jpg";
 import Easy_Maintenance from "../../../assets/Easy_Maintenance.png";
 import Flexible_Slots from "../../../assets/Flexible_Slots.png";
 import Thermal_Plastic_Inner from "../../../assets/Thermal_Plastic_Inner.png";
 
 const TabletopData = {
+  loading: "lazy",
   name: "Tabletop",
   image: demoimage4,
+
   description:
     "Featuring a seamless touchscreen, 40mm foaming refrigeration, adjustable shelving, easy spiral twist mechanism, anti-theft bin, cashless payments (UPI, cards), direct fund transfer, and inventory management.",
   specs: [
@@ -24,6 +26,7 @@ const TabletopData = {
   features: [
     {
       img: Doorseel,
+
       title: "Insulated Door Seal",
       desc: "Ensures effective cooling retention and energy efficiency by tightly sealing the door.",
     },
