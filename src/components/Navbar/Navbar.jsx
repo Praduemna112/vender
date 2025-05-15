@@ -31,8 +31,8 @@ const Navbar = () => {
         <Link to="/" className="flex items-center space-x-3">
           <CircuitLogo className="w-14 h-14" />
           <div className="text-white font-bold whitespace-nowrap">
-            <h1 className="text-xl block sm:hidden">PCB Technology</h1>
-            <h1 className="text-3xl hidden sm:block">PCB Technology</h1>
+            <h1 className="text-xl block sm:hidden">JIO VENDOR</h1>
+            <h1 className="text-3xl hidden sm:block">JIO VENDOR</h1>
           </div>
         </Link>
 

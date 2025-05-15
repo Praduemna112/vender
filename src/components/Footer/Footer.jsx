@@ -23,7 +23,7 @@ const Footer = () => {
           <div className="flex flex-col sm:flex-row sm:items-center sm:space-x-3 mb-4">
             <CircuitLogo className="w-16 h-16 mb-2 sm:mb-0" />
             <h2 className="text-2xl font-bold bg-gradient-to-tr from-pink-600 via-purple-500 to-yellow-400 text-transparent bg-clip-text">
-              PCB Technology
+             JIO VENDOR
             </h2>
           </div>
           <p className={`text-base text-gray-700 mb-4 ${hoverGradient}`}>
