@@ -4,7 +4,8 @@ import instagramIcon from "../../assets/Instagram_icon.png";
 import facebookIcon from "../../assets/Facebook_icon.png";
 import linkedinIcon from "../../assets/Linkedin_icon.png";
 import youtubeIcon from "../../assets/Youtube_icon.png";
-
+import { FaWhatsapp } from "react-icons/fa6";
+import { IoMail } from "react-icons/io5";
 import { FaMapMarkerAlt } from "react-icons/fa";
 
 import googleStore from "../../assets/googleStore.jpg";
@@ -23,11 +24,11 @@ const Footer = () => {
           <div className="flex flex-col sm:flex-row sm:items-center sm:space-x-3 mb-4">
             <CircuitLogo className="w-16 h-16 mb-2 sm:mb-0" />
             <h2 className="text-2xl font-bold bg-gradient-to-tr from-pink-600 via-purple-500 to-yellow-400 text-transparent bg-clip-text">
-             JIO VENDOR
+              JIO VENDOR
             </h2>
           </div>
           <p className={`text-base text-gray-700 mb-4 ${hoverGradient}`}>
-            India’s best vending machine manufacturer and supplier.
+            India’s best PTM vending machine manufacturer and supplier.
           </p>
           <div className="flex space-x-4 mt-2">
             <a
@@ -150,13 +151,43 @@ const Footer = () => {
           </div>
 
           {/* Contact Info */}
+          {/* Contact Info */}
           <div className="col-span-2 sm:col-span-1">
             <h3 className="font-bold mb-3 text-lg">Contact</h3>
-            <p className={`text-sm ${hoverGradient}`}>
+            <ul className="space-y-3 text-sm">
+              <li className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2">
+                <span className="font-medium">Contact No:</span>
+                <div className="flex items-center gap-1">
+                  <FaWhatsapp className="text-green-500" />
+                  <a
+                    href="https://wa.me/918329987533?text=Let%20me%20know%20more%20details%20about%20PTM%20Machine"
+                    target="_blank"
+                    className="text-black hover:text-orange-600 underline break-all"
+                  >
+                    +91 8329987533
+                  </a>
+                </div>
+              </li>
+              <li className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2">
+                <span className="font-medium">Email:</span>
+                <div className="flex items-center gap-1">
+                  <IoMail className="text-red-500" />
+                  <a
+                    href="mailto:extrauserdata@gmail.com"
+                    target="_blank"
+                    className="text-black hover:text-orange-600 underline break-all"
+                  >
+                    extrauserdata@gmail.com
+                  </a>
+                </div>
+              </li>
+            </ul>
+
+            {/* <p className={`text-sm ${hoverGradient}`}>
               SUNCITY WING B/2 Apartment building in Solapur, Maharashtra
-            </p>
+            </p> */}
             <p className="mt-2">
-              <a
+              {/* <a
                 href="https://maps.app.goo.gl/JjZmPE93rFyCaDnj6"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -164,7 +195,7 @@ const Footer = () => {
               >
                 Get Directions
                 <FaMapMarkerAlt className="ml-2 text-red-600" />
-              </a>
+              </a> */}
             </p>
             <p className={`mt-4 font-semibold text-sm ${hoverGradient}`}>
               Download our App to get Instant Nourishment

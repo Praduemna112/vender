@@ -82,7 +82,7 @@ const Feature = () => {
         {/* Hero Text */}
         <div className="text-center mb-10" data-aos="fade-up">
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-snug bg-gradient-to-r text-pink-500 p-4 rounded-lg ">
-            India's Leading Vending Machine Supplier Making Everyday Convenience
+            India's Leading PTM Machine Supplier Making Everyday Convenience
             Available - Easier, Smarter, Safer, With Micro Retail Solutions!
           </h1>
         </div>
@@ -182,7 +182,7 @@ const Feature = () => {
               Pantry Supply Services
             </h2>
             <h3 className="text-base sm:text-lg font-semibold mb-3">
-              Allow us to manage your pantry supplies through Smart Vending
+              Allow us to manage your pantry supplies through PTM Vending
               Machines
             </h3>
             <ul className="space-y-2 text-base sm:text-lg mt-4">
@@ -212,7 +212,7 @@ const Feature = () => {
           data-aos="fade-up"
         >
           <h2 className="text-center text-2xl sm:text-3xl md:text-4xl font-bold mb-14 text-pink-400 bg-clip-text ">
-            Why choose Vending Machine?
+            Why choose PTM Vending Machine?
           </h2>
           <div className="flex flex-col sm:flex-row items-center gap-16">
             <div className="w-full min-h-80 sm:w-1/3 flex justify-center sm:justify-end">

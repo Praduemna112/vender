@@ -33,7 +33,7 @@ const HeroSection = () => {
       {/* Text Content */}
       <div className="text-center text-white max-w-4xl z-10 mt-10 px-2 sm:px-4 md:px-8">
         <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-snug md:leading-tight tracking-tight">
-          Reimagining Vending. India’s Foremost in Instant Commerce Via Smart
+          Reimagining PTM Machine. India’s Foremost in Instant Commerce Via Smart
           Micro Retail Solutions!
           <TypeWriter />
         </h1>

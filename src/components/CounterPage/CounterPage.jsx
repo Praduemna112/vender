@@ -29,21 +29,21 @@ const CounterPage = () => {
       >
         <div>
           <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white">
-            {counterState && <CountUp start={0} end={2000} duration={1.75} />}+
+            {counterState && <CountUp start={0} end={50} duration={1.75} />}+
           </h2>
           <p className="text-xl md:text-2xl py-2 font-semibold text-white">Machines</p>
         </div>
 
         <div>
           <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white">
-            {counterState && <CountUp start={0} end={550} duration={1.75} />}+
+            {counterState && <CountUp start={0} end={35} duration={1.75} />}+
           </h2>
           <p className="text-xl md:text-2xl py-2 font-semibold text-white">Clients</p>
         </div>
 
         <div>
           <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white">
-            {counterState && <CountUp start={0} end={20} duration={1.75} />}+
+            {counterState && <CountUp start={0} end={10} duration={1.75} />}+
           </h2>
           <p className="text-xl md:text-2xl py-2 font-semibold text-white">Cities</p>
         </div>

@@ -34,7 +34,7 @@ const Model = () => {
             Models
           </h1>
           <p className="max-w-4xl text-base sm:text-lg md:text-xl text-white font-semibold px-2">
-            At PCB Technology, we offer a wide range of vending machine models,
+            At PCB Technology, we offer a wide range of PTM vending machine models,
             allowing you to customize them to dispense a variety of products.
           </p>
           <div className="w-screen h-10 sm:h-14 md:h-20 bg-gradient-to-r from-orange-400 to-transparent rounded-tl-full rounded-tr-full" />

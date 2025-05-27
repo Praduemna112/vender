@@ -1,10 +1,10 @@
 import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react'; // Uncomment this line to use React plugin
+import react from '@vitejs/plugin-react';
 import path from 'path';
 
-// https://vite.dev/config/
 export default defineConfig({
-  plugins: [react()],  // Ensure the React plugin is enabled
+  base: '/', //Add this line to support clean URLs on hosting
+  plugins: [react()],
   build: {
     outDir: 'dist',
   },
@@ -14,6 +14,6 @@ export default defineConfig({
     }
   },
   server: {
-    historyApiFallback: true,  // This is the key to make React Router work on refresh
+    historyApiFallback: true  // Optional, more relevant for dev server
   }
 });
