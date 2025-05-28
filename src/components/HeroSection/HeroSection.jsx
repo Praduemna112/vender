@@ -14,7 +14,6 @@ const HeroSection = () => {
       setShowVideo(false);
     }
   };
-
   if (showVideo) {
     window.addEventListener("keydown", handleKeyDown);
   }
