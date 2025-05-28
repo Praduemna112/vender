@@ -8,19 +8,22 @@ import PlayButton from "./PlayButton";
 const HeroSection = () => {
   const [showVideo, setShowVideo] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (showVideo) setShowVideo(false);
-    };
-
-    if (showVideo) {
-      window.addEventListener("scroll", handleScroll);
+ useEffect(() => {
+  const handleKeyDown = (e) => {
+    if (e.key === "Escape") {
+      setShowVideo(false);
     }
+  };
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [showVideo]);
+  if (showVideo) {
+    window.addEventListener("keydown", handleKeyDown);
+  }
+
+  return () => {
+    window.removeEventListener("keydown", handleKeyDown);
+  };
+}, [showVideo]);
+
 
   return (
     <div
