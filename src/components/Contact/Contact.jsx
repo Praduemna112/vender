@@ -43,7 +43,7 @@ const Contact = () => {
         <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 mb-4">
           <span>How can </span>
           <span className="bg-gradient-to-r from-pink-500 via-blue-400 to-yellow-400 bg-clip-text text-transparent">
-            We Help
+            We Help ?
           </span>
         </h2>
       </div>
