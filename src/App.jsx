@@ -10,6 +10,7 @@ import Feacture from "./components/FeactureSection/Feacture";
 import AboutUs from "./components/AboutUs/AboutUs";
 import Contact from "./components/Contact/Contact";
 import Model from "./components/ModelView/Model";
+import GalaxyModel from './components/ModelView/GalaxyModel/GalaxyModel';
 import EnquirePage from "./components/EnquirePage/EnquirePage";
 import Footer from "./components/Footer/Footer";
 import ScrollToTop from "./components/ScrollToTop";
@@ -35,6 +36,7 @@ function App() {
           <Route path="/features" element={<Feacture />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/models" element={<Model />} />
+           <Route path="/models/galaxy" element={<GalaxyModel />} />
           <Route path="/enquire" element={<EnquirePage />} />
           <Route path="/privacypolicy" element={<Privacy_Policy />} />
           <Route path="/terms_conditions" element={<Terms_Conditions />} />

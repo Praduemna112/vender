@@ -1,7 +1,7 @@
 // src/components/ModelView/GalaxyModel/GalaxyData.js
 import GalaxyModel from "../../../assets/GalaxyModel.webp";
 import Doorseel from "../../../assets/Doorseel.jpg";
-import Easy_Maintenance from "../../../assets/Easy_Maintenance.png";
+import Double_layer from "../../../assets/Double_layer.png";
 import Flexible_Slots from "../../../assets/Flexible_Slots.png";
 import Thermal_Plastic_Inner from "../../../assets/Thermal_Plastic_Inner.png";
 
@@ -28,10 +28,10 @@ const GalaxyData = {
       title: "Insulated Door Seal",
       desc: "Ensures effective cooling retention and energy efficiency by tightly sealing the door.",
     },
-    {
-      img: Easy_Maintenance,
-      title: "Easy Maintenance Design",
-      desc: "Built for quick access and simplified servicing to reduce downtime and maintenance effort.",
+  {
+      img: Double_layer,
+      title: "Double layer toughened glass",
+      desc: "Provides superior durability and insulation with a robust dual-glass layer design.",
     },
     {
       img: Flexible_Slots,

@@ -107,7 +107,7 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div>
+            {/* <div>
               <h3 className="font-bold mb-3 text-lg">Legal</h3>
               <ul className="space-y-2 text-sm">
                 <li>
@@ -126,27 +126,49 @@ const Footer = () => {
                   </Link>
                 </li>
               </ul>
-            </div>
+            </div> */}
           </div>
 
           {/* Offerings */}
           <div className="col-span-1">
             <h3 className="font-bold mb-3 text-lg">Our Offerings</h3>
             <ul className="space-y-2 text-sm">
-              {[
-                "Beverage Vending Machine",
-                "Healthy Food Vending Machine",
-                "Automatic Vending Machine",
-                "Smart Vending Machine",
-                "Buy Vending Machine In India",
-                "Vending Machine Operators",
-                "Vending Machine On Rent",
-                "Snack Vending Machine On Rent",
-              ].map((item, index) => (
-                <li key={index} className={hoverGradient}>
-                  {item}
-                </li>
-              ))}
+               <li>
+                <Link to="/models" className={hoverGradient}>
+                  Beverage PTM Machine
+                </Link>
+              </li>
+               <li>
+                <Link to="/models" className={hoverGradient}>
+                 Healthy Food PTM Machine
+                </Link>
+              </li>
+               <li>
+                <Link to="/models" className={hoverGradient}>
+               Automatic PTM Machine
+                </Link>
+              </li>
+               <li>
+                <Link to="/models" className={hoverGradient}>
+                Smart PTM Machine
+                </Link>
+              </li>
+                  <li>
+                <Link to="/models" className={hoverGradient}>
+               PTM Machine Operators
+                </Link>
+              </li>
+                  <li>
+                <Link to="/models" className={hoverGradient}>
+               PTM Machine On Rent
+                </Link>
+              </li>
+                  <li>
+                <Link to="/models" className={hoverGradient}>
+              Snack PTM Machine On Rent
+                </Link>
+              </li>
+          
             </ul>
           </div>
 

@@ -17,8 +17,8 @@ const Contact = () => {
             We’d love to hear from you…
           </h1>
           <p className="max-w-4xl text-base sm:text-lg md:text-xl text-white font-semibold px-2">
-            At PCB Technology, we offer a wide range of PTM vending machine models,
-            allowing you to customize them to dispense a variety of products.
+            At Jio Vendor, we offer a wide range of PTM machine models, allowing
+            you to customize them to dispense a variety of products.
           </p>
           <div className="w-screen h-10 sm:h-14 md:h-20 bg-gradient-to-r from-orange-400 to-transparent rounded-tl-full rounded-tr-full" />
         </div>
@@ -53,8 +53,7 @@ const Contact = () => {
       <div className="px-4 sm:px-10 mb-20 flex justify-center">
         <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* WhatsApp Card */}
-        <div className="bg-white shadow-lg rounded-xl p-6 border border-red-200 md:hover:shadow-2xl md:hover:-translate-y-2 transform transition duration-300">
-
+          <div className="bg-white shadow-lg rounded-xl p-6 border border-red-200 md:hover:shadow-2xl md:hover:-translate-y-2 transform transition duration-300">
             <h3 className="text-xl font-semibold text-green-600 flex items-center gap-2 mb-2">
               <FaWhatsapp className="text-2xl" />
               WhatsApp

@@ -28,19 +28,33 @@ const HeroSection = () => {
       className="relative w-full min-h-screen bg-center bg-no-repeat bg-cover flex items-center justify-center px-4 sm:px-6 lg:px-8 py-12 sm:py-16 md:py-20"
       style={{
         backgroundImage: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(${heroBg})`,
+        userSelect: "none",
+        WebkitUserSelect: "text",
+        MozUserSelect: "text",
+        msUserSelect: "text",
       }}
     >
       {/* Text Content */}
-      <div className="text-center text-white max-w-4xl z-10 mt-10 px-2 sm:px-4 md:px-8">
+      <div
+        className="text-center text-white max-w-4xl z-10 mt-10 px-2 sm:px-4 md:px-8"
+        style={{
+          userSelect: "none",
+          WebkitUserSelect: "text",
+          MozUserSelect: "text",
+          msUserSelect: "text",
+        }}
+      >
         <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-snug md:leading-tight tracking-tight">
-          Reimagining PTM Machine. India’s Foremost in Instant Commerce Via Smart
-          Micro Retail Solutions!
+          Renowned <span className="text-cyan-400">P</span>roduct{" "}
+          <span className="text-cyan-400">T</span>eller{" "}
+          <span className="text-cyan-400">M</span>achine. India’s upcoming
+          future in Instant Commerce Via Robotic Retail Solutions !
           <TypeWriter />
         </h1>
 
-        <p className="text-sm sm:text-base md:text-lg mb-6 md:mb-8 leading-relaxed md:leading-loose">
-          Our mission is to revolutionize the way people shop and interact with
-          their environment through our innovative micro retail solutions.
+        <p className="text-sm sm:text-base md:text-xl italic mb-6 md:mb-8 leading-relaxed md:leading-loose">
+          Our goal is to design the way people to shop and interact with their
+          environment through our robotic retail solutions.
         </p>
 
         {/* Know More Button */}
@@ -52,7 +66,12 @@ const HeroSection = () => {
 
         {/* Play Button */}
         {!showVideo && (
-          <div className="mt-6 flex justify-center">
+          <div
+            className="mt-6 flex justify-center"
+            style={{
+              userSelect: "none", // Prevent accidental selection on button
+            }}
+          >
             <PlayButton size={80} onClick={() => setShowVideo(true)} />
           </div>
         )}
@@ -68,10 +87,12 @@ const HeroSection = () => {
               autoPlay
               onEnded={() => setShowVideo(false)}
               className="w-full h-full max-w-full max-h-full object-contain rounded-lg shadow-lg"
+              style={{ userSelect: "none" }} // video should not be selectable
             />
             <button
               onClick={() => setShowVideo(false)}
               className="absolute top-4 right-4 bg-white text-black rounded-full w-10 h-10 flex items-center justify-center text-xl font-bold hover:bg-gray-300 z-50"
+              style={{ userSelect: "none" }} // button text not selectable
             >
               ✕
             </button>

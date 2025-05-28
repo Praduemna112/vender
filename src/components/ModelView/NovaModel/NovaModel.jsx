@@ -2,7 +2,7 @@
 import Nova from "../../../assets/NovaModel.webp";
 import Anti_theft_division_plate_opening from "../../../assets/Anti_theft_division_plate_opening.jpg";
 import Conveyor_belt_delivery from "../../../assets/Conveyor_belt_delivery.png";
-import Pull_out_hopper from "../../../assets/Pull_out_hopper.png";
+import Double_layer from "../../../assets/Double_layer.png";
 import Elevator_system from "../../../assets/Elevator_system.png";
 
 const NovaModel = {
@@ -37,10 +37,10 @@ const NovaModel = {
       title: "Conveyor Belt Delivery",
       desc: "Efficient delivery mechanism that transports products seamlessly to the collection bin.",
     },
-    {
-      img: Pull_out_hopper,
-      title: "Pull-Out Hopper",
-      desc: "Convenient design feature that allows easy refilling and maintenance with minimal effort.",
+   {
+      img: Double_layer,
+      title: "Double layer toughened glass",
+      desc: "Provides superior durability and insulation with a robust dual-glass layer design.",
     },
   ],
   
