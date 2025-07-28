@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
-import "aos/dist/aos.css";
 import img1 from "../../assets/machine1.webp";
 import img2 from "../../assets/machine2.webp";
 

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import videoFile from "../../assets/video.mp4";
+import videoFile from "../../assets/video1.mp4";
 import heroBg from "../../assets/vender_image.png";
 import TypeWriter from "./TypeWriter";
 import PlayButton from "./PlayButton";
@@ -8,21 +8,20 @@ import PlayButton from "./PlayButton";
 const HeroSection = () => {
   const [showVideo, setShowVideo] = useState(false);
 
- useEffect(() => {
-  const handleKeyDown = (e) => {
-    if (e.key === "Escape") {
-      setShowVideo(false);
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === "Escape") {
+        setShowVideo(false);
+      }
+    };
+    if (showVideo) {
+      window.addEventListener("keydown", handleKeyDown);
     }
-  };
-  if (showVideo) {
-    window.addEventListener("keydown", handleKeyDown);
-  }
 
-  return () => {
-    window.removeEventListener("keydown", handleKeyDown);
-  };
-}, [showVideo]);
-
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [showVideo]);
 
   return (
     <div

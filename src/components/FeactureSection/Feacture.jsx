@@ -20,7 +20,7 @@ import lockIcon from "../../assets/lock.png";
 const Feature = () => {
   useEffect(() => {
     AOS.init({ duration: 1000, once: false, mirror: true });
-  }, []);
+  }, []);//it is should be empty
 
   return (
     <>
